@@ -6,7 +6,7 @@ Type: `object`
 
 ## Properties
  - <b id="#https://open-metadata.org/schema/entity/bots.json/properties/id">id</b>
-	 - &#36;ref: [../type/basic.json#/definitions/uuid](#..typebasic.jsondefinitionsuuid)
+	 - &#36;ref: [../types/basic.json#/definitions/uuid](#..typebasic.jsondefinitionsuuid)
  - <b id="#https://open-metadata.org/schema/entity/bots.json/properties/name">name</b>
 	 - Type: `string`
 	 - Length: between 1 and 64
