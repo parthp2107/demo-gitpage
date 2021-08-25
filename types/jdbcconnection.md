@@ -1,17 +1,17 @@
 # JDBC connection
 
-<b id="https/open-metadata.org/schema/type/jdbcconnection.json">&#36;id: https://open-metadata.org/schema/type/jdbcConnection.json </b>
+<b id="httpsopen-metadata.orgschematypejdbcconnection.json">&#36;id: https://open-metadata.org/schema/type/jdbcConnection.json</b>
 
 Type: `object`
 
 ## Properties
- - ### driverClass `required`
-	 - &#36;ref: [#/definitions/driverClass](#driverclass)
- - ### connectionUrl `required`
-	 - &#36;ref: [#/definitions/connectionUrl](#connectionurl)
- - ### userName `required`
+ - **driverClass** `required`
+	 - &#36;ref: [#/definitions/driverClass](definitionsdriverclass)
+ - **connectionUrl** `required`
+	 - &#36;ref: [#/definitions/connectionUrl](definitionsconnectionurl)
+ - **userName** `required`
 	 - Type: `string`
- - ### password `required`
+ - **password** `required`
 	 - Type: `string`
 
 
@@ -30,10 +30,10 @@ Type: `object`
 ### jdbcInfo
 
  - Type: `object`
-### Properties
-	 - ### driverClass `required`
-		 - &#36;ref: [#/definitions/driverClass](#driverclass)
-	 - ### connectionUrl `required`
-		 - &#36;ref: [#/definitions/connectionUrl](#connectionurl)
+ - **Properties**
+	 - **driverClass** `required`
+		 - &#36;ref: [#/definitions/driverClass](definitionsdriverclass)
+	 - **connectionUrl** `required`
+		 - &#36;ref: [#/definitions/connectionUrl](definitionsconnectionurl)
 
 

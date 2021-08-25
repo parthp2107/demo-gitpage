@@ -1,48 +1,48 @@
 # Table
 
-<b id="https/open-metadata.org/schema/entity/data/table.json">&#36;id: https://open-metadata.org/schema/entity/data/table.json </b>
+<b id="httpsopen-metadata.orgschemaentitydatatable.json">&#36;id: https://open-metadata.org/schema/entity/data/table.json</b>
 
 Type: `object`
 
 ## Properties
- - ### id `required`
-	 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
- - ### name `required`
-	 - &#36;ref: [#/definitions/tableName](#tablename)
- - ### description
+ - **id** `required`
+	 - &#36;ref: [../../type/basic.json#/definitions/uuid](....typebasic.mddefinitionsuuid)
+ - **name** `required`
+	 - &#36;ref: [#/definitions/tableName](definitionstablename)
+ - **description**
 	 - Type: `string`
- - ### href
-	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
- - ### tableType
-	 - &#36;ref: [#/definitions/tableType](#tabletype)
- - ### fullyQualifiedName
+ - **href**
+	 - &#36;ref: [../../type/basic.json#/definitions/href](....typebasic.mddefinitionshref)
+ - **tableType**
+	 - &#36;ref: [#/definitions/tableType](definitionstabletype)
+ - **fullyQualifiedName**
 	 - Type: `string`
- - ### columns `required`
+ - **columns** `required`
 	 - Type: `array`
-### Items
-		 - &#36;ref: [#/definitions/column](#column)
- - ### tableConstraints
+		 - **Items**
+		 - &#36;ref: [#/definitions/column](definitionscolumn)
+ - **tableConstraints**
 	 - Type: `array`
-### Items
-		 - &#36;ref: [#/definitions/tableConstraint](#tableconstraint)
- - ### usageSummary
-	 - &#36;ref: [../../type/usageDetails.json](../types/usagedetails.md)
- - ### owner
-	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
- - ### followers
-	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
- - ### database
-	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
- - ### viewDefinition
-	 - &#36;ref: [../../type/basic.json#/definitions/sqlQuery](../types/basic.md#sqlquery)
- - ### tags
+		 - **Items**
+		 - &#36;ref: [#/definitions/tableConstraint](definitionstableconstraint)
+ - **usageSummary**
+	 - &#36;ref: [../../type/usageDetails.json](....typeusagedetails.md)
+ - **owner**
+	 - &#36;ref: [../../type/entityReference.json](....typeentityreference.md)
+ - **followers**
+	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](....typeentityreference.mddefinitionsentityreferencelist)
+ - **database**
+	 - &#36;ref: [../../type/entityReference.json](....typeentityreference.md)
+ - **viewDefinition**
+	 - &#36;ref: [../../type/basic.json#/definitions/sqlQuery](....typebasic.mddefinitionssqlquery)
+ - **tags**
 	 - Type: `array`
-### Items
-		 - &#36;ref: [../../type/tagLabel.json](../types/taglabel.md)
- - ### joins
-	 - &#36;ref: [#/definitions/tableJoins](#tablejoins)
- - ### sampleData
-	 - &#36;ref: [#/definitions/tableData](#tabledata)
+		 - **Items**
+		 - &#36;ref: [../../type/tagLabel.json](....typetaglabel.md)
+ - **joins**
+	 - &#36;ref: [#/definitions/tableJoins](definitionstablejoins)
+ - **sampleData**
+	 - &#36;ref: [#/definitions/tableData](definitionstabledata)
 
 
 ## Type definitions in this schema
@@ -110,16 +110,16 @@ Type: `object`
 ### tableConstraint
 
  - Type: `object`
-### Properties
-	 - ### constraintType
+ - **Properties**
+	 - **constraintType**
 		 - Type: `string`
 		 - The value is restricted to the following: 
 			 1. _"UNIQUE"_
 			 2. _"PRIMARY_KEY"_
 			 3. _"FOREIGN_KEY"_
-	 - ### columns
+	 - **columns**
 		 - Type: `array`
-### Items
+			 - **Items**
 			 - Type: `string`
 
 
@@ -146,22 +146,22 @@ Type: `object`
 ### column
 
  - Type: `object`
-### Properties
-	 - ### name `required`
-		 - &#36;ref: [#/definitions/columnName](#columnname)
-	 - ### columnDataType `required`
-		 - &#36;ref: [#/definitions/columnDataType](#columndatatype)
-	 - ### description
+ - **Properties**
+	 - **name** `required`
+		 - &#36;ref: [#/definitions/columnName](definitionscolumnname)
+	 - **columnDataType** `required`
+		 - &#36;ref: [#/definitions/columnDataType](definitionscolumndatatype)
+	 - **description**
 		 - Type: `string`
-	 - ### fullyQualifiedName
-		 - &#36;ref: [#/definitions/fullyQualifiedColumnName](#fullyqualifiedcolumnname)
-	 - ### tags
+	 - **fullyQualifiedName**
+		 - &#36;ref: [#/definitions/fullyQualifiedColumnName](definitionsfullyqualifiedcolumnname)
+	 - **tags**
 		 - Type: `array`
-### Items
-			 - &#36;ref: [../../type/tagLabel.json](../types/taglabel.md)
-	 - ### columnConstraint
-		 - &#36;ref: [#/definitions/columnConstraint](#columnconstraint)
-	 - ### ordinalPosition
+			 - **Items**
+			 - &#36;ref: [../../type/tagLabel.json](....typetaglabel.md)
+	 - **columnConstraint**
+		 - &#36;ref: [#/definitions/columnConstraint](definitionscolumnconstraint)
+	 - **ordinalPosition**
 		 - Type: `integer`
 
 
@@ -169,17 +169,17 @@ Type: `object`
 
  - Type: `object`
  - This schema <u>does not</u> accept additional properties.
-### Properties
-	 - ### columnName
-		 - &#36;ref: [#/definitions/columnName](#columnname)
-	 - ### joinedWith
+ - **Properties**
+	 - **columnName**
+		 - &#36;ref: [#/definitions/columnName](definitionscolumnname)
+	 - **joinedWith**
 		 - Type: `array`
-### Items
+			 - **Items**
 			 - Type: `object`
-### Properties
-				 - ### fullyQualifiedName
-					 - &#36;ref: [#/definitions/fullyQualifiedColumnName](#fullyqualifiedcolumnname)
-				 - ### joinCount
+			 - **Properties**
+				 - **fullyQualifiedName**
+					 - &#36;ref: [#/definitions/fullyQualifiedColumnName](definitionsfullyqualifiedcolumnname)
+				 - **joinCount**
 					 - Type: `integer`
 
 
@@ -187,32 +187,32 @@ Type: `object`
 
  - Type: `object`
  - This schema <u>does not</u> accept additional properties.
-### Properties
-	 - ### startDate
-		 - &#36;ref: [../../type/basic.json#/definitions/date](../types/basic.md#date)
-	 - ### dayCount
+ - **Properties**
+	 - **startDate**
+		 - &#36;ref: [../../type/basic.json#/definitions/date](....typebasic.mddefinitionsdate)
+	 - **dayCount**
 		 - Type: `integer`
 		 - Default: `1`
-	 - ### columnJoins
+	 - **columnJoins**
 		 - Type: `array`
-### Items
-			 - &#36;ref: [#/definitions/columnJoins](#columnjoins)
+			 - **Items**
+			 - &#36;ref: [#/definitions/columnJoins](definitionscolumnjoins)
 
 
 ### tableData
 
  - Type: `object`
  - This schema <u>does not</u> accept additional properties.
-### Properties
-	 - ### columns
+ - **Properties**
+	 - **columns**
 		 - Type: `array`
-### Items
-			 - &#36;ref: [#/definitions/columnName](#columnname)
-	 - ### rows
+			 - **Items**
+			 - &#36;ref: [#/definitions/columnName](definitionscolumnname)
+	 - **rows**
 		 - Type: `array`
-### Items
+			 - **Items**
 			 - Type: `array`
-### Items
+				 - **Items**
 				 - Type: `string`
 			 - 
 				 - Type: `number`

@@ -1,6 +1,6 @@
 # Basic
 
-<b id="https/open-metadata.org/schema/type/basic.json">&#36;id: https://open-metadata.org/schema/type/basic.json </b>
+<b id="httpsopen-metadata.orgschematypebasic.json">&#36;id: https://open-metadata.org/schema/type/basic.json</b>
 
 
 
@@ -40,10 +40,10 @@
 ### timeInterval
 
  - Type: `object`
-### Properties
-	 - ### start
+ - **Properties**
+	 - **start**
 		 - Type: `integer`
-	 - ### end
+	 - **end**
 		 - Type: `integer`
 
 

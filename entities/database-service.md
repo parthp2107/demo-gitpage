@@ -1,25 +1,25 @@
 # Database Service
 
-<b id="https/open-metadata.org/schema/entity/services/databaseservice.json">&#36;id: https://open-metadata.org/schema/entity/services/databaseService.json </b>
+<b id="httpsopen-metadata.orgschemaentityservicesdatabaseservice.json">&#36;id: https://open-metadata.org/schema/entity/services/databaseService.json</b>
 
 Type: `object`
 
 ## Properties
- - ### id `required`
-	 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
- - ### name `required`
+ - **id** `required`
+	 - &#36;ref: [../../type/basic.json#/definitions/uuid](....typebasic.mddefinitionsuuid)
+ - **name** `required`
 	 - Type: `string`
 	 - Length: between 1 and 64
- - ### serviceType `required`
-	 - &#36;ref: [#/definitions/databaseServiceType](#databaseservicetype)
- - ### description
+ - **serviceType** `required`
+	 - &#36;ref: [#/definitions/databaseServiceType](definitionsdatabaseservicetype)
+ - **description**
 	 - Type: `string`
- - ### href `required`
-	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
- - ### jdbc `required`
-	 - &#36;ref: [../../type/jdbcConnection.json#/definitions/jdbcInfo](../types/jdbcconnection.md#jdbcinfo)
- - ### ingestionSchedule
-	 - &#36;ref: [../../type/schedule.json](../types/schedule.md)
+ - **href** `required`
+	 - &#36;ref: [../../type/basic.json#/definitions/href](....typebasic.mddefinitionshref)
+ - **jdbc** `required`
+	 - &#36;ref: [../../type/jdbcConnection.json#/definitions/jdbcInfo](....typejdbcconnection.mddefinitionsjdbcinfo)
+ - **ingestionSchedule**
+	 - &#36;ref: [../../type/schedule.json](....typeschedule.md)
 
 
 ## Type definitions in this schema

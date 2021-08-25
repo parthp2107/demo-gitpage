@@ -1,38 +1,38 @@
 # Profile
 
-<b id="https/open-metadata.org/schema/type/profile.json">&#36;id: https://open-metadata.org/schema/type/profile.json </b>
+<b id="httpsopen-metadata.orgschematypeprofile.json">&#36;id: https://open-metadata.org/schema/type/profile.json</b>
 
 Type: `object`
 
 ## Properties
- - ### images
-	 - &#36;ref: [#/definitions/imageList](#imagelist)
+ - **images**
+	 - &#36;ref: [#/definitions/imageList](definitionsimagelist)
 
 
 ## Type definitions in this schema
 ### imageList
 
  - Type: `object`
-### Properties
-	 - ### image
+ - **Properties**
+	 - **image**
 		 - Type: `string`
 		 - String format must be a "uri"
-	 - ### image24
+	 - **image24**
 		 - Type: `string`
 		 - String format must be a "uri"
-	 - ### image32
+	 - **image32**
 		 - Type: `string`
 		 - String format must be a "uri"
-	 - ### image48
+	 - **image48**
 		 - Type: `string`
 		 - String format must be a "uri"
-	 - ### image72
+	 - **image72**
 		 - Type: `string`
 		 - String format must be a "uri"
-	 - ### image192
+	 - **image192**
 		 - Type: `string`
 		 - String format must be a "uri"
-	 - ### image512
+	 - **image512**
 		 - Type: `string`
 		 - String format must be a "uri"
 

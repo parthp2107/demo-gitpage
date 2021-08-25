@@ -1,50 +1,50 @@
 # Topic
 
-<b id="https/open-metadata.org/schema/entity/data/topic.json">&#36;id: https://open-metadata.org/schema/entity/data/topic.json </b>
+<b id="httpsopen-metadata.orgschemaentitydatatopic.json">&#36;id: https://open-metadata.org/schema/entity/data/topic.json</b>
 
 Type: `object`
 
 ## Properties
- - ### id `required`
-	 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
- - ### name `required`
-	 - &#36;ref: [#/definitions/topicName](#topicname)
- - ### fullyQualifiedName
+ - **id** `required`
+	 - &#36;ref: [../../type/basic.json#/definitions/uuid](....typebasic.mddefinitionsuuid)
+ - **name** `required`
+	 - &#36;ref: [#/definitions/topicName](definitionstopicname)
+ - **fullyQualifiedName**
 	 - Type: `string`
- - ### description
+ - **description**
 	 - Type: `string`
- - ### service `required`
-	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
- - ### partitions `required`
+ - **service** `required`
+	 - &#36;ref: [../../type/entityReference.json](....typeentityreference.md)
+ - **partitions** `required`
 	 - Type: `integer`
 	 - Range:  &ge; 1
- - ### schemaText
+ - **schemaText**
 	 - Type: `string`
- - ### schemaType
-	 - &#36;ref: [#/definitions/schemaType](#schematype)
- - ### cleanupPolicies
+ - **schemaType**
+	 - &#36;ref: [#/definitions/schemaType](definitionsschematype)
+ - **cleanupPolicies**
 	 - Type: `array`
-### Items
-		 - &#36;ref: [#/definitions/cleanupPolicy](#cleanuppolicy)
- - ### retentionTime
+		 - **Items**
+		 - &#36;ref: [#/definitions/cleanupPolicy](definitionscleanuppolicy)
+ - **retentionTime**
 	 - Type: `number`
- - ### maximumMessageSize
+ - **maximumMessageSize**
 	 - Type: `integer`
- - ### minimumInSyncReplicas
+ - **minimumInSyncReplicas**
 	 - Type: `integer`
- - ### retentionSize
+ - **retentionSize**
 	 - Type: `number`
 	 - Default: _"-1"_
- - ### owner
-	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
- - ### followers
-	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
- - ### tags
+ - **owner**
+	 - &#36;ref: [../../type/entityReference.json](....typeentityreference.md)
+ - **followers**
+	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](....typeentityreference.mddefinitionsentityreferencelist)
+ - **tags**
 	 - Type: `array`
-### Items
-		 - &#36;ref: [../../type/tagLabel.json](../types/taglabel.md)
- - ### href
-	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
+		 - **Items**
+		 - &#36;ref: [../../type/tagLabel.json](....typetaglabel.md)
+ - **href**
+	 - &#36;ref: [../../type/basic.json#/definitions/href](....typebasic.mddefinitionshref)
 
 
 ## Type definitions in this schema

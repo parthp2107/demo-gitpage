@@ -1,25 +1,25 @@
 # Dashboard
 
-<b id="https/open-metadata.org/schema/entity/data/dashboard.json">&#36;id: https://open-metadata.org/schema/entity/data/dashboard.json </b>
+<b id="httpsopen-metadata.orgschemaentitydatadashboard.json">&#36;id: https://open-metadata.org/schema/entity/data/dashboard.json</b>
 
 Type: `object`
 
 ## Properties
- - ### id `required`
-	 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
- - ### name `required`
+ - **id** `required`
+	 - &#36;ref: [../../type/basic.json#/definitions/uuid](....typebasic.mddefinitionsuuid)
+ - **name** `required`
 	 - Type: `string`
 	 - Length: between 1 and 64
- - ### fullyQualifiedName
+ - **fullyQualifiedName**
 	 - Type: `string`
 	 - Length: between 1 and 64
- - ### description
+ - **description**
 	 - Type: `string`
- - ### href
-	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
- - ### owner
-	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
- - ### service `required`
-	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
- - ### usageSummary
-	 - &#36;ref: [../../type/usageDetails.json](../types/usagedetails.md)
+ - **href**
+	 - &#36;ref: [../../type/basic.json#/definitions/href](....typebasic.mddefinitionshref)
+ - **owner**
+	 - &#36;ref: [../../type/entityReference.json](....typeentityreference.md)
+ - **service** `required`
+	 - &#36;ref: [../../type/entityReference.json](....typeentityreference.md)
+ - **usageSummary**
+	 - &#36;ref: [../../type/usageDetails.json](....typeusagedetails.md)

@@ -1,28 +1,28 @@
 # Team
 
-<b id="https/open-metadata.org/schema/entity/teams/team.json">&#36;id: https://open-metadata.org/schema/entity/teams/team.json </b>
+<b id="httpsopen-metadata.orgschemaentityteamsteam.json">&#36;id: https://open-metadata.org/schema/entity/teams/team.json</b>
 
 Type: `object`
 
 ## Properties
- - ### id `required`
-	 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
- - ### name `required`
-	 - &#36;ref: [#/definitions/teamName](#teamname)
- - ### displayName
+ - **id** `required`
+	 - &#36;ref: [../../type/basic.json#/definitions/uuid](....typebasic.mddefinitionsuuid)
+ - **name** `required`
+	 - &#36;ref: [#/definitions/teamName](definitionsteamname)
+ - **displayName**
 	 - Type: `string`
- - ### description
+ - **description**
 	 - Type: `string`
- - ### href `required`
-	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
- - ### profile
-	 - &#36;ref: [../../type/profile.json](../types/profile.md)
- - ### deleted
+ - **href** `required`
+	 - &#36;ref: [../../type/basic.json#/definitions/href](....typebasic.mddefinitionshref)
+ - **profile**
+	 - &#36;ref: [../../type/profile.json](....typeprofile.md)
+ - **deleted**
 	 - Type: `boolean`
- - ### users
-	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
- - ### owns
-	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
+ - **users**
+	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](....typeentityreference.mddefinitionsentityreferencelist)
+ - **owns**
+	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](....typeentityreference.mddefinitionsentityreferencelist)
 
 
 ## Type definitions in this schema
