@@ -26,10 +26,10 @@ Type: `object`
 	 - Type: `string`
  - **dateTime**
 	 - Date when the API call is made.
-	 - &#36;ref: [basic.json#/definitions/dateTime](basic.md#datetime)
+	 - $ref: [basic.json#/definitions/dateTime](basic.md#datetime)
  - **entityId** `required`
 	 - Identifier of entity that was modified by the operation.
-	 - &#36;ref: [basic.json#/definitions/uuid](basic.md#uuid)
+	 - $ref: [basic.json#/definitions/uuid](basic.md#uuid)
  - **entityType** `required`
 	 - Type of Entity that is modified by the operation.
 	 - Type: `string`

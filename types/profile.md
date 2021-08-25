@@ -8,7 +8,7 @@ Type: `object`
 
 ## Properties
  - **images**
-	 - &#36;ref: [#/definitions/imageList](#imagelist)
+	 - $ref: [#/definitions/imageList](#imagelist)
 
 
 ## Type definitions in this schema

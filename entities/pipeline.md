@@ -9,7 +9,7 @@ Type: `object`
 ## Properties
  - **id** `required`
 	 - Unique identifier that identifies a pipeline instance.
-	 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
+	 - $ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
  - **name** `required`
 	 - Name that identifies this pipeline instance uniquely.
 	 - Type: `string`
@@ -23,10 +23,10 @@ Type: `object`
 	 - Type: `string`
  - **href**
 	 - Link to the resource corresponding to this entity.
-	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
+	 - $ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
  - **owner**
 	 - Owner of this pipeline.
-	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
+	 - $ref: [../../type/entityReference.json](../types/entityreference.md)
  - **service** `required`
 	 - Link to service where this pipeline is hosted in.
-	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
+	 - $ref: [../../type/entityReference.json](../types/entityreference.md)

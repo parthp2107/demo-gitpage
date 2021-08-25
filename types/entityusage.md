@@ -9,9 +9,9 @@ Type: `object`
 ## Properties
  - **entity** `required`
 	 - Entity for which usage is returned.
-	 - &#36;ref: [entityReference.json](entityreference.md)
+	 - $ref: [entityReference.json](entityreference.md)
  - **usage** `required`
 	 - List usage details per day.
 	 - Type: `array`
 		 - **Items**
-		 - &#36;ref: [usageDetails.json](usagedetails.md)
+		 - $ref: [usageDetails.json](usagedetails.md)

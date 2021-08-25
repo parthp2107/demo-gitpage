@@ -9,23 +9,23 @@ Type: `object`
 ## Properties
  - **id** `required`
 	 - Unique identifier that identifies an entity instance.
-	 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
+	 - $ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
  - **href**
 	 - Link to the resource corresponding to this entity.
-	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
+	 - $ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
  - **threadTs**
 	 - Timestamp of the when the first post created the thread.
-	 - &#36;ref: [../../type/basic.json#/definitions/dateTime](../types/basic.md#datetime)
+	 - $ref: [../../type/basic.json#/definitions/dateTime](../types/basic.md#datetime)
  - **about** `required`
 	 - Data asset about which this thread is created for with format <#E/{enties}/{entityName}/{field}/{fieldValue}.
-	 - &#36;ref: [../../type/basic.json#/definitions/entityLink](../types/basic.md#entitylink)
+	 - $ref: [../../type/basic.json#/definitions/entityLink](../types/basic.md#entitylink)
  - **addressedTo**
 	 - User or team this thread is addressed to in format <#E/{enties}/{entityName}/{field}/{fieldValue}.
-	 - &#36;ref: [../../type/basic.json#/definitions/entityLink](../types/basic.md#entitylink)
+	 - $ref: [../../type/basic.json#/definitions/entityLink](../types/basic.md#entitylink)
  - **posts** `required`
 	 - Type: `array`
 		 - **Items**
-		 - &#36;ref: [#/definitions/post](#post)
+		 - $ref: [#/definitions/post](#post)
 
 
 ## Type definitions in this schema
@@ -43,6 +43,6 @@ Type: `object`
 		 - String format must be a "date-time"
 	 - **from** `required`
 		 - ID of User (regular user or a bot) posting the message.
-		 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
+		 - $ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
 
 

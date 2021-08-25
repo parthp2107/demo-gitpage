@@ -9,30 +9,30 @@ Type: `object`
 ## Properties
  - **id** `required`
 	 - Unique identifier of this messaging service instance.
-	 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
+	 - $ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
  - **name** `required`
 	 - Name that identifies this messaging service.
 	 - Type: `string`
 	 - Length: between 1 and 64
  - **serviceType** `required`
 	 - Type of messaging service such as Kafka or Pulsar...
-	 - &#36;ref: [#/definitions/messagingServiceType](#messagingservicetype)
+	 - $ref: [#/definitions/messagingServiceType](#messagingservicetype)
  - **description**
 	 - Description of a messaging service instance.
 	 - Type: `string`
  - **brokers** `required`
 	 - Multiple bootstrap addresses for Kafka. Single proxy address for Pulsar.
-	 - &#36;ref: [#/definitions/brokers](#brokers)
+	 - $ref: [#/definitions/brokers](#brokers)
  - **schemaRegistry**
 	 - Schema registry URL.
 	 - Type: `string`
 	 - String format must be a "uri"
  - **ingestionSchedule**
 	 - Schedule for running metadata ingestion jobs.
-	 - &#36;ref: [../../type/schedule.json](../types/schedule.md)
+	 - $ref: [../../type/schedule.json](../types/schedule.md)
  - **href**
 	 - Link to the resource corresponding to this messaging service.
-	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
+	 - $ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
 
 
 ## Type definitions in this schema

@@ -9,18 +9,18 @@ Type: `object`
 ## Properties
  - **id** `required`
 	 - Unique identifier of this table instance.
-	 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
+	 - $ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
  - **name** `required`
 	 - Name of a table. Expected to be unique within a database.
-	 - &#36;ref: [#/definitions/tableName](#tablename)
+	 - $ref: [#/definitions/tableName](#tablename)
  - **description**
 	 - Description of a table.
 	 - Type: `string`
  - **href**
 	 - Link to this table resource.
-	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
+	 - $ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
  - **tableType**
-	 - &#36;ref: [#/definitions/tableType](#tabletype)
+	 - $ref: [#/definitions/tableType](#tabletype)
  - **fullyQualifiedName**
 	 - Fully qualified name of a table in the form `serviceName.databaseName.tableName`.
 	 - Type: `string`
@@ -28,38 +28,38 @@ Type: `object`
 	 - Columns in this table.
 	 - Type: `array`
 		 - **Items**
-		 - &#36;ref: [#/definitions/column](#column)
+		 - $ref: [#/definitions/column](#column)
  - **tableConstraints**
 	 - Table constraints.
 	 - Type: `array`
 		 - **Items**
-		 - &#36;ref: [#/definitions/tableConstraint](#tableconstraint)
+		 - $ref: [#/definitions/tableConstraint](#tableconstraint)
  - **usageSummary**
 	 - Latest usage information for this table.
-	 - &#36;ref: [../../type/usageDetails.json](../types/usagedetails.md)
+	 - $ref: [../../type/usageDetails.json](../types/usagedetails.md)
  - **owner**
 	 - Owner of this table.
-	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
+	 - $ref: [../../type/entityReference.json](../types/entityreference.md)
  - **followers**
 	 - Followers of this table.
-	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
+	 - $ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
  - **database**
 	 - Reference to Database that contains this table.
-	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
+	 - $ref: [../../type/entityReference.json](../types/entityreference.md)
  - **viewDefinition**
 	 - View Definition in SQL. Applies to TableType.View only.
-	 - &#36;ref: [../../type/basic.json#/definitions/sqlQuery](../types/basic.md#sqlquery)
+	 - $ref: [../../type/basic.json#/definitions/sqlQuery](../types/basic.md#sqlquery)
  - **tags**
 	 - Tags for this table.
 	 - Type: `array`
 		 - **Items**
-		 - &#36;ref: [../../type/tagLabel.json](../types/taglabel.md)
+		 - $ref: [../../type/tagLabel.json](../types/taglabel.md)
  - **joins**
 	 - Details of other tables this table is frequently joined with.
-	 - &#36;ref: [#/definitions/tableJoins](#tablejoins)
+	 - $ref: [#/definitions/tableJoins](#tablejoins)
  - **sampleData**
 	 - Sample data for a table.
-	 - &#36;ref: [#/definitions/tableData](#tabledata)
+	 - $ref: [#/definitions/tableData](#tabledata)
 
 
 ## Type definitions in this schema
@@ -174,23 +174,23 @@ Type: `object`
  - Type: `object`
  - **Properties**
 	 - **name** `required`
-		 - &#36;ref: [#/definitions/columnName](#columnname)
+		 - $ref: [#/definitions/columnName](#columnname)
 	 - **columnDataType** `required`
 		 - Data type of the column (int, date etc.).
-		 - &#36;ref: [#/definitions/columnDataType](#columndatatype)
+		 - $ref: [#/definitions/columnDataType](#columndatatype)
 	 - **description**
 		 - Description of the column.
 		 - Type: `string`
 	 - **fullyQualifiedName**
-		 - &#36;ref: [#/definitions/fullyQualifiedColumnName](#fullyqualifiedcolumnname)
+		 - $ref: [#/definitions/fullyQualifiedColumnName](#fullyqualifiedcolumnname)
 	 - **tags**
 		 - Tags associated with the column.
 		 - Type: `array`
 			 - **Items**
-			 - &#36;ref: [../../type/tagLabel.json](../types/taglabel.md)
+			 - $ref: [../../type/tagLabel.json](../types/taglabel.md)
 	 - **columnConstraint**
 		 - Column level constraint.
-		 - &#36;ref: [#/definitions/columnConstraint](#columnconstraint)
+		 - $ref: [#/definitions/columnConstraint](#columnconstraint)
 	 - **ordinalPosition**
 		 - Ordinal position of the column.
 		 - Type: `integer`
@@ -203,7 +203,7 @@ Type: `object`
  - This schema <u>does not</u> accept additional properties.
  - **Properties**
 	 - **columnName**
-		 - &#36;ref: [#/definitions/columnName](#columnname)
+		 - $ref: [#/definitions/columnName](#columnname)
 	 - **joinedWith**
 		 - Fully qualified names of the columns that this column is joined with.
 		 - Type: `array`
@@ -211,7 +211,7 @@ Type: `object`
 			 - Type: `object`
 			 - **Properties**
 				 - **fullyQualifiedName**
-					 - &#36;ref: [#/definitions/fullyQualifiedColumnName](#fullyqualifiedcolumnname)
+					 - $ref: [#/definitions/fullyQualifiedColumnName](#fullyqualifiedcolumnname)
 				 - **joinCount**
 					 - Type: `integer`
 
@@ -224,14 +224,14 @@ Type: `object`
  - **Properties**
 	 - **startDate**
 		 - Date can be only from today going back to last 29 days.
-		 - &#36;ref: [../../type/basic.json#/definitions/date](../types/basic.md#date)
+		 - $ref: [../../type/basic.json#/definitions/date](../types/basic.md#date)
 	 - **dayCount**
 		 - Type: `integer`
 		 - Default: `1`
 	 - **columnJoins**
 		 - Type: `array`
 			 - **Items**
-			 - &#36;ref: [#/definitions/columnJoins](#columnjoins)
+			 - $ref: [#/definitions/columnJoins](#columnjoins)
 
 
 ### tableData
@@ -244,7 +244,7 @@ Type: `object`
 		 - List of local column names (not fully qualified column names) of the table.
 		 - Type: `array`
 			 - **Items**
-			 - &#36;ref: [#/definitions/columnName](#columnname)
+			 - $ref: [#/definitions/columnName](#columnname)
 	 - **rows**
 		 - Data for multiple rows of the table.
 		 - Type: `array`

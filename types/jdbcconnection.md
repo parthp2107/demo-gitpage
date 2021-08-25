@@ -9,10 +9,10 @@ Type: `object`
 ## Properties
  - **driverClass** `required`
 	 - JDBC driver class.
-	 - &#36;ref: [#/definitions/driverClass](#driverclass)
+	 - $ref: [#/definitions/driverClass](#driverclass)
  - **connectionUrl** `required`
 	 - JDBC connection URL.
-	 - &#36;ref: [#/definitions/connectionUrl](#connectionurl)
+	 - $ref: [#/definitions/connectionUrl](#connectionurl)
  - **userName** `required`
 	 - Login user name.
 	 - Type: `string`
@@ -41,8 +41,8 @@ Type: `object`
  - Type: `object`
  - **Properties**
 	 - **driverClass** `required`
-		 - &#36;ref: [#/definitions/driverClass](#driverclass)
+		 - $ref: [#/definitions/driverClass](#driverclass)
 	 - **connectionUrl** `required`
-		 - &#36;ref: [#/definitions/connectionUrl](#connectionurl)
+		 - $ref: [#/definitions/connectionUrl](#connectionurl)
 
 

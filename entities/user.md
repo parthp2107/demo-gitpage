@@ -11,18 +11,18 @@ This schema <u>does not</u> accept additional properties.
 ## Properties
  - **id** `required`
 	 - Unique identifier that identifies a user entity instance.
-	 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
+	 - $ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
  - **name** `required`
-	 - &#36;ref: [#/definitions/userName](#username)
+	 - $ref: [#/definitions/userName](#username)
  - **displayName**
 	 - Name used for display purposes. Example 'FirstName LastName'.
 	 - Type: `string`
  - **email** `required`
 	 - Email address of the user.
-	 - &#36;ref: [../../type/basic.json#/definitions/email](../types/basic.md#email)
+	 - $ref: [../../type/basic.json#/definitions/email](../types/basic.md#email)
  - **href** `required`
 	 - Link to the resource corresponding to this entity.
-	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
+	 - $ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
  - **timezone**
 	 - Timezone of the user.
 	 - Type: `string`
@@ -38,16 +38,16 @@ This schema <u>does not</u> accept additional properties.
 	 - Type: `boolean`
  - **profile**
 	 - Profile of the user.
-	 - &#36;ref: [../../type/profile.json](../types/profile.md)
+	 - $ref: [../../type/profile.json](../types/profile.md)
  - **teams**
 	 - Teams that the user belongs to.
-	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
+	 - $ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
  - **owns**
 	 - List of entities owned by the user.
-	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
+	 - $ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
  - **follows**
 	 - List of entities followed by the user.
-	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
+	 - $ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
 
 
 ## Type definitions in this schema

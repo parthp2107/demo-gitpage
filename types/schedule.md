@@ -9,7 +9,7 @@ Type: `object`
 ## Properties
  - **startDate**
 	 - Start date and time of the schedule.
-	 - &#36;ref: [basic.json#/definitions/dateTime](basic.md#datetime)
+	 - $ref: [basic.json#/definitions/dateTime](basic.md#datetime)
  - **repeatFrequency**
 	 - Repeat frequency in ISO 8601 duration format. Example - 'P23DT23H'.
-	 - &#36;ref: [basic.json#/definitions/duration](basic.md#duration)
+	 - $ref: [basic.json#/definitions/duration](basic.md#duration)

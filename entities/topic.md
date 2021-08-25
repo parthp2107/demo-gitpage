@@ -9,10 +9,10 @@ Type: `object`
 ## Properties
  - **id** `required`
 	 - Unique identifier that identifies this topic instance.
-	 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
+	 - $ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
  - **name** `required`
 	 - Name that identifies the topic.
-	 - &#36;ref: [#/definitions/topicName](#topicname)
+	 - $ref: [#/definitions/topicName](#topicname)
  - **fullyQualifiedName**
 	 - Name that uniquely identifies a topic in the format 'messagingServiceName.topicName'.
 	 - Type: `string`
@@ -21,7 +21,7 @@ Type: `object`
 	 - Type: `string`
  - **service** `required`
 	 - Link to the messaging cluster/service where this topic is hosted in.
-	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
+	 - $ref: [../../type/entityReference.json](../types/entityreference.md)
  - **partitions** `required`
 	 - Number of partitions into which the topic is divided.
 	 - Type: `integer`
@@ -31,12 +31,12 @@ Type: `object`
 	 - Type: `string`
  - **schemaType**
 	 - Schema used for message serialization.
-	 - &#36;ref: [#/definitions/schemaType](#schematype)
+	 - $ref: [#/definitions/schemaType](#schematype)
  - **cleanupPolicies**
 	 - Topic clean up policies. For Kafka - `cleanup.policy` configuration.
 	 - Type: `array`
 		 - **Items**
-		 - &#36;ref: [#/definitions/cleanupPolicy](#cleanuppolicy)
+		 - $ref: [#/definitions/cleanupPolicy](#cleanuppolicy)
  - **retentionTime**
 	 - Retention time in milliseconds. For Kafka - `retention.ms` configuration.
 	 - Type: `number`
@@ -52,18 +52,18 @@ Type: `object`
 	 - Default: _"-1"_
  - **owner**
 	 - Owner of this topic.
-	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
+	 - $ref: [../../type/entityReference.json](../types/entityreference.md)
  - **followers**
 	 - Followers of this table.
-	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
+	 - $ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
  - **tags**
 	 - Tags for this table.
 	 - Type: `array`
 		 - **Items**
-		 - &#36;ref: [../../type/tagLabel.json](../types/taglabel.md)
+		 - $ref: [../../type/tagLabel.json](../types/taglabel.md)
  - **href**
 	 - Link to the resource corresponding to this entity.
-	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
+	 - $ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
 
 
 ## Type definitions in this schema

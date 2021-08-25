@@ -9,7 +9,7 @@ Type: `object`
 ## Properties
  - **id**
 	 - Unique identifier of a bot instance.
-	 - &#36;ref: [../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
+	 - $ref: [../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
  - **name**
 	 - Name of the bot.
 	 - Type: `string`
@@ -22,4 +22,4 @@ Type: `object`
 	 - Type: `string`
  - **href**
 	 - Link to the resource corresponding to this bot.
-	 - &#36;ref: [../type/basic.json#/definitions/href](../types/basic.md#href)
+	 - $ref: [../type/basic.json#/definitions/href](../types/basic.md#href)

@@ -28,4 +28,4 @@ Type: `object`
 	 - Default: _"Confirmed"_
  - **href**
 	 - Link to the tag resource.
-	 - &#36;ref: [basic.json#/definitions/href](basic.md#href)
+	 - $ref: [basic.json#/definitions/href](basic.md#href)
