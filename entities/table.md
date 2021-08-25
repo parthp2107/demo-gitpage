@@ -236,6 +236,8 @@ Type: `array`
 
 ### Items
  - Type: `string`
+ - 
  - Type: `number`
+ - 
 
 
