@@ -1,6 +1,6 @@
 # Audit Log
 
-<b id="httpsopen-metadata.orgschematypeauditlog.json">&#36;id: https://open-metadata.org/schema/type/auditLog.json</b>
+<b id="https/open-metadata.org/schema/type/auditlog.json">&#36;id: https://open-metadata.org/schema/type/auditLog.json</b>
 
 Type: `object`
 
@@ -19,8 +19,8 @@ Type: `object`
  - **userName** `required`
 	 - Type: `string`
  - **dateTime**
-	 - &#36;ref: [basic.json#/definitions/dateTime](basic.mddefinitionsdatetime)
+	 - &#36;ref: [basic.json#/definitions/dateTime](basic.md#datetime)
  - **entityId** `required`
-	 - &#36;ref: [basic.json#/definitions/uuid](basic.mddefinitionsuuid)
+	 - &#36;ref: [basic.json#/definitions/uuid](basic.md#uuid)
  - **entityType** `required`
 	 - Type: `string`

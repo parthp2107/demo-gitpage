@@ -1,6 +1,6 @@
 # Tag Label
 
-<b id="httpsopen-metadata.orgschematypetaglabel.json">&#36;id: https://open-metadata.org/schema/type/tagLabel.json</b>
+<b id="https/open-metadata.org/schema/type/taglabel.json">&#36;id: https://open-metadata.org/schema/type/tagLabel.json</b>
 
 Type: `object`
 
@@ -23,4 +23,4 @@ Type: `object`
 		 2. _"Confirmed"_
 	 - Default: _"Confirmed"_
  - **href**
-	 - &#36;ref: [basic.json#/definitions/href](basic.mddefinitionshref)
+	 - &#36;ref: [basic.json#/definitions/href](basic.md#href)

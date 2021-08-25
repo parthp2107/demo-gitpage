@@ -1,48 +1,48 @@
 # Table
 
-<b id="httpsopen-metadata.orgschemaentitydatatable.json">&#36;id: https://open-metadata.org/schema/entity/data/table.json</b>
+<b id="https/open-metadata.org/schema/entity/data/table.json">&#36;id: https://open-metadata.org/schema/entity/data/table.json</b>
 
 Type: `object`
 
 ## Properties
  - **id** `required`
-	 - &#36;ref: [../../type/basic.json#/definitions/uuid](....typebasic.mddefinitionsuuid)
+	 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
  - **name** `required`
-	 - &#36;ref: [#/definitions/tableName](definitionstablename)
+	 - &#36;ref: [#/definitions/tableName](#tablename)
  - **description**
 	 - Type: `string`
  - **href**
-	 - &#36;ref: [../../type/basic.json#/definitions/href](....typebasic.mddefinitionshref)
+	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
  - **tableType**
-	 - &#36;ref: [#/definitions/tableType](definitionstabletype)
+	 - &#36;ref: [#/definitions/tableType](#tabletype)
  - **fullyQualifiedName**
 	 - Type: `string`
  - **columns** `required`
 	 - Type: `array`
 		 - **Items**
-		 - &#36;ref: [#/definitions/column](definitionscolumn)
+		 - &#36;ref: [#/definitions/column](#column)
  - **tableConstraints**
 	 - Type: `array`
 		 - **Items**
-		 - &#36;ref: [#/definitions/tableConstraint](definitionstableconstraint)
+		 - &#36;ref: [#/definitions/tableConstraint](#tableconstraint)
  - **usageSummary**
-	 - &#36;ref: [../../type/usageDetails.json](....typeusagedetails.md)
+	 - &#36;ref: [../../type/usageDetails.json](../types/usagedetails.md)
  - **owner**
-	 - &#36;ref: [../../type/entityReference.json](....typeentityreference.md)
+	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
  - **followers**
-	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](....typeentityreference.mddefinitionsentityreferencelist)
+	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
  - **database**
-	 - &#36;ref: [../../type/entityReference.json](....typeentityreference.md)
+	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
  - **viewDefinition**
-	 - &#36;ref: [../../type/basic.json#/definitions/sqlQuery](....typebasic.mddefinitionssqlquery)
+	 - &#36;ref: [../../type/basic.json#/definitions/sqlQuery](../types/basic.md#sqlquery)
  - **tags**
 	 - Type: `array`
 		 - **Items**
-		 - &#36;ref: [../../type/tagLabel.json](....typetaglabel.md)
+		 - &#36;ref: [../../type/tagLabel.json](../types/taglabel.md)
  - **joins**
-	 - &#36;ref: [#/definitions/tableJoins](definitionstablejoins)
+	 - &#36;ref: [#/definitions/tableJoins](#tablejoins)
  - **sampleData**
-	 - &#36;ref: [#/definitions/tableData](definitionstabledata)
+	 - &#36;ref: [#/definitions/tableData](#tabledata)
 
 
 ## Type definitions in this schema
@@ -148,19 +148,19 @@ Type: `object`
  - Type: `object`
  - **Properties**
 	 - **name** `required`
-		 - &#36;ref: [#/definitions/columnName](definitionscolumnname)
+		 - &#36;ref: [#/definitions/columnName](#columnname)
 	 - **columnDataType** `required`
-		 - &#36;ref: [#/definitions/columnDataType](definitionscolumndatatype)
+		 - &#36;ref: [#/definitions/columnDataType](#columndatatype)
 	 - **description**
 		 - Type: `string`
 	 - **fullyQualifiedName**
-		 - &#36;ref: [#/definitions/fullyQualifiedColumnName](definitionsfullyqualifiedcolumnname)
+		 - &#36;ref: [#/definitions/fullyQualifiedColumnName](#fullyqualifiedcolumnname)
 	 - **tags**
 		 - Type: `array`
 			 - **Items**
-			 - &#36;ref: [../../type/tagLabel.json](....typetaglabel.md)
+			 - &#36;ref: [../../type/tagLabel.json](../types/taglabel.md)
 	 - **columnConstraint**
-		 - &#36;ref: [#/definitions/columnConstraint](definitionscolumnconstraint)
+		 - &#36;ref: [#/definitions/columnConstraint](#columnconstraint)
 	 - **ordinalPosition**
 		 - Type: `integer`
 
@@ -171,14 +171,14 @@ Type: `object`
  - This schema <u>does not</u> accept additional properties.
  - **Properties**
 	 - **columnName**
-		 - &#36;ref: [#/definitions/columnName](definitionscolumnname)
+		 - &#36;ref: [#/definitions/columnName](#columnname)
 	 - **joinedWith**
 		 - Type: `array`
 			 - **Items**
 			 - Type: `object`
 			 - **Properties**
 				 - **fullyQualifiedName**
-					 - &#36;ref: [#/definitions/fullyQualifiedColumnName](definitionsfullyqualifiedcolumnname)
+					 - &#36;ref: [#/definitions/fullyQualifiedColumnName](#fullyqualifiedcolumnname)
 				 - **joinCount**
 					 - Type: `integer`
 
@@ -189,14 +189,14 @@ Type: `object`
  - This schema <u>does not</u> accept additional properties.
  - **Properties**
 	 - **startDate**
-		 - &#36;ref: [../../type/basic.json#/definitions/date](....typebasic.mddefinitionsdate)
+		 - &#36;ref: [../../type/basic.json#/definitions/date](../types/basic.md#date)
 	 - **dayCount**
 		 - Type: `integer`
 		 - Default: `1`
 	 - **columnJoins**
 		 - Type: `array`
 			 - **Items**
-			 - &#36;ref: [#/definitions/columnJoins](definitionscolumnjoins)
+			 - &#36;ref: [#/definitions/columnJoins](#columnjoins)
 
 
 ### tableData
@@ -207,7 +207,7 @@ Type: `object`
 	 - **columns**
 		 - Type: `array`
 			 - **Items**
-			 - &#36;ref: [#/definitions/columnName](definitionscolumnname)
+			 - &#36;ref: [#/definitions/columnName](#columnname)
 	 - **rows**
 		 - Type: `array`
 			 - **Items**

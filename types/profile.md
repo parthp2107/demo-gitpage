@@ -1,12 +1,12 @@
 # Profile
 
-<b id="httpsopen-metadata.orgschematypeprofile.json">&#36;id: https://open-metadata.org/schema/type/profile.json</b>
+<b id="https/open-metadata.org/schema/type/profile.json">&#36;id: https://open-metadata.org/schema/type/profile.json</b>
 
 Type: `object`
 
 ## Properties
  - **images**
-	 - &#36;ref: [#/definitions/imageList](definitionsimagelist)
+	 - &#36;ref: [#/definitions/imageList](#imagelist)
 
 
 ## Type definitions in this schema

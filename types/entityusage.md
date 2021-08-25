@@ -1,6 +1,6 @@
 # Usage details of an entity
 
-<b id="httpsopen-metadata.orgschematypeentityusage.json">&#36;id: https://open-metadata.org/schema/type/entityUsage.json</b>
+<b id="https/open-metadata.org/schema/type/entityusage.json">&#36;id: https://open-metadata.org/schema/type/entityUsage.json</b>
 
 Type: `object`
 

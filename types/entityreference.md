@@ -1,12 +1,12 @@
 # Entity Reference
 
-<b id="httpsopen-metadata.orgschematypeentityreference.json">&#36;id: https://open-metadata.org/schema/type/entityReference.json</b>
+<b id="https/open-metadata.org/schema/type/entityreference.json">&#36;id: https://open-metadata.org/schema/type/entityReference.json</b>
 
 Type: `object`
 
 ## Properties
  - **id** `required`
-	 - &#36;ref: [basic.json#/definitions/uuid](basic.mddefinitionsuuid)
+	 - &#36;ref: [basic.json#/definitions/uuid](basic.md#uuid)
  - **type** `required`
 	 - Type: `string`
  - **name**
@@ -14,7 +14,7 @@ Type: `object`
  - **description**
 	 - Type: `string`
  - **href**
-	 - &#36;ref: [basic.json#/definitions/href](basic.mddefinitionshref)
+	 - &#36;ref: [basic.json#/definitions/href](basic.md#href)
 
 
 ## Type definitions in this schema

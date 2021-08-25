@@ -1,6 +1,6 @@
 # User
 
-<b id="httpsopen-metadata.orgschemaentityteamsuser.json">&#36;id: https://open-metadata.org/schema/entity/teams/user.json</b>
+<b id="https/open-metadata.org/schema/entity/teams/user.json">&#36;id: https://open-metadata.org/schema/entity/teams/user.json</b>
 
 Type: `object`
 
@@ -8,15 +8,15 @@ This schema <u>does not</u> accept additional properties.
 
 ## Properties
  - **id** `required`
-	 - &#36;ref: [../../type/basic.json#/definitions/uuid](....typebasic.mddefinitionsuuid)
+	 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
  - **name** `required`
-	 - &#36;ref: [#/definitions/userName](definitionsusername)
+	 - &#36;ref: [#/definitions/userName](#username)
  - **displayName**
 	 - Type: `string`
  - **email** `required`
-	 - &#36;ref: [../../type/basic.json#/definitions/email](....typebasic.mddefinitionsemail)
+	 - &#36;ref: [../../type/basic.json#/definitions/email](../types/basic.md#email)
  - **href** `required`
-	 - &#36;ref: [../../type/basic.json#/definitions/href](....typebasic.mddefinitionshref)
+	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
  - **timezone**
 	 - Type: `string`
 	 - String format must be a "timezone"
@@ -27,13 +27,13 @@ This schema <u>does not</u> accept additional properties.
  - **isAdmin**
 	 - Type: `boolean`
  - **profile**
-	 - &#36;ref: [../../type/profile.json](....typeprofile.md)
+	 - &#36;ref: [../../type/profile.json](../types/profile.md)
  - **teams**
-	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](....typeentityreference.mddefinitionsentityreferencelist)
+	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
  - **owns**
-	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](....typeentityreference.mddefinitionsentityreferencelist)
+	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
  - **follows**
-	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](....typeentityreference.mddefinitionsentityreferencelist)
+	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
 
 
 ## Type definitions in this schema

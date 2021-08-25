@@ -1,6 +1,6 @@
 # Tag Category
 
-<b id="httpsopen-metadata.orgschemaentitytagstagcategory.json">&#36;id: https://open-metadata.org/schema/entity/tags/tagCategory.json</b>
+<b id="https/open-metadata.org/schema/entity/tags/tagcategory.json">&#36;id: https://open-metadata.org/schema/entity/tags/tagCategory.json</b>
 
 Type: `object`
 
@@ -8,19 +8,19 @@ This schema <u>does not</u> accept additional properties.
 
 ## Properties
  - **name** `required`
-	 - &#36;ref: [#/definitions/tagName](definitionstagname)
+	 - &#36;ref: [#/definitions/tagName](#tagname)
  - **description** `required`
 	 - Type: `string`
  - **categoryType** `required`
-	 - &#36;ref: [#/definitions/tagCategoryType](definitionstagcategorytype)
+	 - &#36;ref: [#/definitions/tagCategoryType](#tagcategorytype)
  - **href**
-	 - &#36;ref: [../../type/basic.json#/definitions/href](....typebasic.mddefinitionshref)
+	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
  - **usageCount**
 	 - Type: `integer`
  - **children**
 	 - Type: `array`
 		 - **Items**
-		 - &#36;ref: [#/definitions/tag](definitionstag)
+		 - &#36;ref: [#/definitions/tag](#tag)
 
 
 ## Type definitions in this schema

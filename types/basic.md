@@ -1,6 +1,6 @@
 # Basic
 
-<b id="httpsopen-metadata.orgschematypebasic.json">&#36;id: https://open-metadata.org/schema/type/basic.json</b>
+<b id="https/open-metadata.org/schema/type/basic.json">&#36;id: https://open-metadata.org/schema/type/basic.json</b>
 
 
 
