@@ -1,31 +1,34 @@
 # Database Service
 
-<b id="httpsopen-metadata.orgschemaentityservicesdatabaseservice.json">&#36;id: https://open-metadata.org/schema/entity/services/databaseService.json</b>
+<b id="https/open-metadata.org/schema/entity/services/databaseservice.json">&#36;id: https://open-metadata.org/schema/entity/services/databaseService.json </b>
 
 Type: `object`
 
 ## Properties
- - <b id="#https://open-metadata.org/schema/entity/services/databaseService.json/properties/id">id</b> `required`
-	 - &#36;ref: [../../type/basic.json#/definitions/uuid](#....typebasic.jsondefinitionsuuid)
- - <b id="#https://open-metadata.org/schema/entity/services/databaseService.json/properties/name">name</b> `required`
-	 - Type: `string`
-	 - Length: between 1 and 64
- - <b id="#https://open-metadata.org/schema/entity/services/databaseService.json/properties/serviceType">serviceType</b> `required`
-	 - &#36;ref: [#/definitions/databaseServiceType](#/definitions/databaseServiceType)
- - <b id="#https://open-metadata.org/schema/entity/services/databaseService.json/properties/description">description</b>
-	 - Type: `string`
- - <b id="#https://open-metadata.org/schema/entity/services/databaseService.json/properties/href">href</b> `required`
-	 - &#36;ref: [../../type/basic.json#/definitions/href](#....typebasic.jsondefinitionshref)
- - <b id="#https://open-metadata.org/schema/entity/services/databaseService.json/properties/jdbc">jdbc</b> `required`
-	 - &#36;ref: [../../type/jdbcConnection.json#/definitions/jdbcInfo](#....typejdbcconnection.jsondefinitionsjdbcinfo)
- - <b id="#https://open-metadata.org/schema/entity/services/databaseService.json/properties/ingestionSchedule">ingestionSchedule</b>
-	 - &#36;ref: [../../type/schedule.json](#....typeschedule.json)
+### id `required`
+ - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
+### name `required`
+Type: `string`
+
+ - Length: between 1 and 64
+### serviceType `required`
+ - &#36;ref: [#/definitions/databaseServiceType](#databaseservicetype)
+### description
+Type: `string`
+
+### href `required`
+ - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
+### jdbc `required`
+ - &#36;ref: [../../type/jdbcConnection.json#/definitions/jdbcInfo](../types/jdbcconnection.md#jdbcinfo)
+### ingestionSchedule
+ - &#36;ref: [../../type/schedule.json](../types/schedule.md)
 
 
 ## Type definitions in this schema
-**databaseServiceType**
+### databaseServiceType
 
- - Type: `string`
+Type: `string`
+
  - The value is restricted to the following: 
 	 1. _"BigQuery"_
 	 2. _"MySQL"_

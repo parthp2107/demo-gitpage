@@ -1,71 +1,81 @@
 # Basic
 
-<b id="httpsopen-metadata.orgschematypebasic.json">&#36;id: https://open-metadata.org/schema/type/basic.json</b>
+<b id="https/open-metadata.org/schema/type/basic.json">&#36;id: https://open-metadata.org/schema/type/basic.json </b>
 
 
 
 ## Type definitions in this schema
-**uuid**
+### uuid
 
- - Type: `string`
+Type: `string`
+
  - String format must be a "uuid"
 
 
-**email**
+### email
 
- - Type: `string`
+Type: `string`
+
  - String format must be a "email"
  - The value must match this pattern: `^\S+@\S+\.\S+$`
  - Length: between 6 and 127
 
 
-**entityLink**
+### entityLink
 
- - Type: `string`
+Type: `string`
+
  - The value must match this pattern: `^<#E/\S+/\S+>$`
 
 
-**timestamp**
+### timestamp
 
- - Type: `string`
+Type: `string`
+
  - String format must be a "utc-millisec"
 
 
-**href**
+### href
 
- - Type: `string`
+Type: `string`
+
  - String format must be a "uri"
 
 
-**timeInterval**
+### timeInterval
 
- - Type: `object`
- - **Properties**
-	 - <b id="#https://open-metadata.org/schema/type/basic.json/definitions/timeInterval/properties/start">start</b>
-		 - Type: `integer`
-	 - <b id="#https://open-metadata.org/schema/type/basic.json/definitions/timeInterval/properties/end">end</b>
-		 - Type: `integer`
+Type: `object`
 
-
-**duration**
-
- - Type: `string`
+### Properties
+ - ### start
+ - Type: `integer`
+ - ### end
+ - Type: `integer`
 
 
-**date**
+### duration
 
- - Type: `string`
+Type: `string`
+
+
+
+### date
+
+Type: `string`
+
  - String format must be a "date"
 
 
-**dateTime**
+### dateTime
 
- - Type: `string`
+Type: `string`
+
  - String format must be a "date-time"
 
 
-**sqlQuery**
+### sqlQuery
 
- - Type: `string`
+Type: `string`
+
 
 

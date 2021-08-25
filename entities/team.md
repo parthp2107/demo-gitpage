@@ -1,34 +1,38 @@
 # Team
 
-<b id="httpsopen-metadata.orgschemaentityteamsteam.json">&#36;id: https://open-metadata.org/schema/entity/teams/team.json</b>
+<b id="https/open-metadata.org/schema/entity/teams/team.json">&#36;id: https://open-metadata.org/schema/entity/teams/team.json </b>
 
 Type: `object`
 
 ## Properties
- - <b id="#https://open-metadata.org/schema/entity/teams/team.json/properties/id">id</b> `required`
-	 - &#36;ref: [../../type/basic.json#/definitions/uuid](#....typebasic.jsondefinitionsuuid)
- - <b id="#https://open-metadata.org/schema/entity/teams/team.json/properties/name">name</b> `required`
-	 - &#36;ref: [#/definitions/teamName](#/definitions/teamName)
- - <b id="#https://open-metadata.org/schema/entity/teams/team.json/properties/displayName">displayName</b>
-	 - Type: `string`
- - <b id="#https://open-metadata.org/schema/entity/teams/team.json/properties/description">description</b>
-	 - Type: `string`
- - <b id="#https://open-metadata.org/schema/entity/teams/team.json/properties/href">href</b> `required`
-	 - &#36;ref: [../../type/basic.json#/definitions/href](#....typebasic.jsondefinitionshref)
- - <b id="#https://open-metadata.org/schema/entity/teams/team.json/properties/profile">profile</b>
-	 - &#36;ref: [../../type/profile.json](#....typeprofile.json)
- - <b id="#https://open-metadata.org/schema/entity/teams/team.json/properties/deleted">deleted</b>
-	 - Type: `boolean`
- - <b id="#https://open-metadata.org/schema/entity/teams/team.json/properties/users">users</b>
-	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](#....typeentityreference.jsondefinitionsentityreferencelist)
- - <b id="#https://open-metadata.org/schema/entity/teams/team.json/properties/owns">owns</b>
-	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](#....typeentityreference.jsondefinitionsentityreferencelist)
+### id `required`
+ - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
+### name `required`
+ - &#36;ref: [#/definitions/teamName](#teamname)
+### displayName
+Type: `string`
+
+### description
+Type: `string`
+
+### href `required`
+ - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
+### profile
+ - &#36;ref: [../../type/profile.json](../types/profile.md)
+### deleted
+Type: `boolean`
+
+### users
+ - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
+### owns
+ - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
 
 
 ## Type definitions in this schema
-**teamName**
+### teamName
 
- - Type: `string`
+Type: `string`
+
  - Length: between 1 and 64
 
 

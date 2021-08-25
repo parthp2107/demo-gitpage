@@ -1,54 +1,63 @@
 # Table
 
-<b id="httpsopen-metadata.orgschemaentitydatatable.json">&#36;id: https://open-metadata.org/schema/entity/data/table.json</b>
+<b id="https/open-metadata.org/schema/entity/data/table.json">&#36;id: https://open-metadata.org/schema/entity/data/table.json </b>
 
 Type: `object`
 
 ## Properties
- - <b id="#https://open-metadata.org/schema/entity/data/table.json/properties/id">id</b> `required`
-	 - &#36;ref: [../../type/basic.json#/definitions/uuid](#....typebasic.jsondefinitionsuuid)
- - <b id="#https://open-metadata.org/schema/entity/data/table.json/properties/name">name</b> `required`
-	 - &#36;ref: [#/definitions/tableName](#/definitions/tableName)
- - <b id="#https://open-metadata.org/schema/entity/data/table.json/properties/description">description</b>
-	 - Type: `string`
- - <b id="#https://open-metadata.org/schema/entity/data/table.json/properties/href">href</b>
-	 - &#36;ref: [../../type/basic.json#/definitions/href](#....typebasic.jsondefinitionshref)
- - <b id="#https://open-metadata.org/schema/entity/data/table.json/properties/tableType">tableType</b>
-	 - &#36;ref: [#/definitions/tableType](#/definitions/tableType)
- - <b id="#https://open-metadata.org/schema/entity/data/table.json/properties/fullyQualifiedName">fullyQualifiedName</b>
-	 - Type: `string`
- - <b id="#https://open-metadata.org/schema/entity/data/table.json/properties/columns">columns</b> `required`
-	 - Type: `array`
-		 - **Items**
-		 - &#36;ref: [#/definitions/column](#/definitions/column)
- - <b id="#https://open-metadata.org/schema/entity/data/table.json/properties/tableConstraints">tableConstraints</b>
-	 - Type: `array`
-		 - **Items**
-		 - &#36;ref: [#/definitions/tableConstraint](#/definitions/tableConstraint)
- - <b id="#https://open-metadata.org/schema/entity/data/table.json/properties/usageSummary">usageSummary</b>
-	 - &#36;ref: [../../type/usageDetails.json](#....typeusagedetails.json)
- - <b id="#https://open-metadata.org/schema/entity/data/table.json/properties/owner">owner</b>
-	 - &#36;ref: [../../type/entityReference.json](#....typeentityreference.json)
- - <b id="#https://open-metadata.org/schema/entity/data/table.json/properties/followers">followers</b>
-	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](#....typeentityreference.jsondefinitionsentityreferencelist)
- - <b id="#https://open-metadata.org/schema/entity/data/table.json/properties/database">database</b>
-	 - &#36;ref: [../../type/entityReference.json](#....typeentityreference.json)
- - <b id="#https://open-metadata.org/schema/entity/data/table.json/properties/viewDefinition">viewDefinition</b>
-	 - &#36;ref: [../../type/basic.json#/definitions/sqlQuery](#....typebasic.jsondefinitionssqlquery)
- - <b id="#https://open-metadata.org/schema/entity/data/table.json/properties/tags">tags</b>
-	 - Type: `array`
-		 - **Items**
-		 - &#36;ref: [../../type/tagLabel.json](#....typetaglabel.json)
- - <b id="#https://open-metadata.org/schema/entity/data/table.json/properties/joins">joins</b>
-	 - &#36;ref: [#/definitions/tableJoins](#/definitions/tableJoins)
- - <b id="#https://open-metadata.org/schema/entity/data/table.json/properties/sampleData">sampleData</b>
-	 - &#36;ref: [#/definitions/tableData](#/definitions/tableData)
+### id `required`
+ - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
+### name `required`
+ - &#36;ref: [#/definitions/tableName](#tablename)
+### description
+Type: `string`
+
+### href
+ - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
+### tableType
+ - &#36;ref: [#/definitions/tableType](#tabletype)
+### fullyQualifiedName
+Type: `string`
+
+### columns `required`
+Type: `array`
+
+### Items
+&#36;ref: [#/definitions/column](#column)
+
+### tableConstraints
+Type: `array`
+
+### Items
+&#36;ref: [#/definitions/tableConstraint](#tableconstraint)
+
+### usageSummary
+ - &#36;ref: [../../type/usageDetails.json](../types/usagedetails.md)
+### owner
+ - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
+### followers
+ - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
+### database
+ - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
+### viewDefinition
+ - &#36;ref: [../../type/basic.json#/definitions/sqlQuery](../types/basic.md#sqlquery)
+### tags
+Type: `array`
+
+### Items
+&#36;ref: [../../type/tagLabel.json](../types/taglabel.md)
+
+### joins
+ - &#36;ref: [#/definitions/tableJoins](#tablejoins)
+### sampleData
+ - &#36;ref: [#/definitions/tableData](#tabledata)
 
 
 ## Type definitions in this schema
-**tableType**
+### tableType
 
- - Type: `string`
+Type: `string`
+
  - The value is restricted to the following: 
 	 1. _"Regular"_
 	 2. _"External"_
@@ -57,9 +66,10 @@ Type: `object`
 	 5. _"MaterializedView"_
 
 
-**columnDataType**
+### columnDataType
 
- - Type: `string`
+Type: `string`
+
  - The value is restricted to the following: 
 	 1. _"NUMBER"_
 	 2. _"TINYINT"_
@@ -96,9 +106,10 @@ Type: `object`
 	 33. _"JSON"_
 
 
-**columnConstraint**
+### columnConstraint
 
- - Type: `string`
+Type: `string`
+
  - The value is restricted to the following: 
 	 1. _"NULL"_
 	 2. _"NOT_NULL"_
@@ -107,115 +118,124 @@ Type: `object`
  - Default: _"NULL"_
 
 
-**tableConstraint**
+### tableConstraint
 
- - Type: `object`
- - **Properties**
-	 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/tableConstraint/properties/constraintType">constraintType</b>
-		 - Type: `string`
-		 - The value is restricted to the following: 
-			 1. _"UNIQUE"_
-			 2. _"PRIMARY_KEY"_
-			 3. _"FOREIGN_KEY"_
-	 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/tableConstraint/properties/columns">columns</b>
-		 - Type: `array`
-			 - **Items**
-			 - Type: `string`
+Type: `object`
 
-
-**columnName**
-
+### Properties
+ - ### constraintType
  - Type: `string`
+	 - The value is restricted to the following: 
+		 1. _"UNIQUE"_
+		 2. _"PRIMARY_KEY"_
+		 3. _"FOREIGN_KEY"_
+ - ### columns
+ - Type: `array`
+### Items
+Type: `string`
+
+
+
+### columnName
+
+Type: `string`
+
  - The value must match this pattern: `^[^.]*$`
  - Length: between 1 and 64
 
 
-**tableName**
+### tableName
 
- - Type: `string`
+Type: `string`
+
  - The value must match this pattern: `^[^.]*$`
  - Length: between 1 and 64
 
 
-**fullyQualifiedColumnName**
+### fullyQualifiedColumnName
 
- - Type: `string`
+Type: `string`
+
  - Length: between 1 and 256
 
 
-**column**
+### column
 
- - Type: `object`
- - **Properties**
-	 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/column/properties/name">name</b> `required`
-		 - &#36;ref: [#/definitions/columnName](#/definitions/columnName)
-	 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/column/properties/columnDataType">columnDataType</b> `required`
-		 - &#36;ref: [#/definitions/columnDataType](#/definitions/columnDataType)
-	 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/column/properties/description">description</b>
-		 - Type: `string`
-	 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/column/properties/fullyQualifiedName">fullyQualifiedName</b>
-		 - &#36;ref: [#/definitions/fullyQualifiedColumnName](#/definitions/fullyQualifiedColumnName)
-	 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/column/properties/tags">tags</b>
-		 - Type: `array`
-			 - **Items**
-			 - &#36;ref: [../../type/tagLabel.json](#....typetaglabel.json)
-	 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/column/properties/columnConstraint">columnConstraint</b>
-		 - &#36;ref: [#/definitions/columnConstraint](#/definitions/columnConstraint)
-	 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/column/properties/ordinalPosition">ordinalPosition</b>
-		 - Type: `integer`
+Type: `object`
+
+### Properties
+ - ### name `required`
+	 - &#36;ref: [#/definitions/columnName](#columnname)
+ - ### columnDataType `required`
+	 - &#36;ref: [#/definitions/columnDataType](#columndatatype)
+ - ### description
+ - Type: `string`
+ - ### fullyQualifiedName
+	 - &#36;ref: [#/definitions/fullyQualifiedColumnName](#fullyqualifiedcolumnname)
+ - ### tags
+ - Type: `array`
+### Items
+ - &#36;ref: [../../type/tagLabel.json](../types/taglabel.md)
+ - ### columnConstraint
+	 - &#36;ref: [#/definitions/columnConstraint](#columnconstraint)
+ - ### ordinalPosition
+ - Type: `integer`
 
 
-**columnJoins**
+### columnJoins
 
- - Type: `object`
+Type: `object`
+
  - This schema <u>does not</u> accept additional properties.
- - **Properties**
-	 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/columnJoins/properties/columnName">columnName</b>
-		 - &#36;ref: [#/definitions/columnName](#/definitions/columnName)
-	 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/columnJoins/properties/joinedWith">joinedWith</b>
-		 - Type: `array`
-			 - **Items**
-			 - Type: `object`
-			 - **Properties**
-				 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/columnJoins/properties/joinedWith/items/properties/fullyQualifiedName">fullyQualifiedName</b>
-					 - &#36;ref: [#/definitions/fullyQualifiedColumnName](#/definitions/fullyQualifiedColumnName)
-				 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/columnJoins/properties/joinedWith/items/properties/joinCount">joinCount</b>
-					 - Type: `integer`
+### Properties
+ - ### columnName
+	 - &#36;ref: [#/definitions/columnName](#columnname)
+ - ### joinedWith
+ - Type: `array`
+### Items
+Type: `object`
+
+### Properties
+ - ### fullyQualifiedName
+	 - &#36;ref: [#/definitions/fullyQualifiedColumnName](#fullyqualifiedcolumnname)
+ - ### joinCount
+ - Type: `integer`
 
 
-**tableJoins**
+### tableJoins
 
- - Type: `object`
+Type: `object`
+
  - This schema <u>does not</u> accept additional properties.
- - **Properties**
-	 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/tableJoins/properties/startDate">startDate</b>
-		 - &#36;ref: [../../type/basic.json#/definitions/date](#....typebasic.jsondefinitionsdate)
-	 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/tableJoins/properties/dayCount">dayCount</b>
-		 - Type: `integer`
-		 - Default: `1`
-	 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/tableJoins/properties/columnJoins">columnJoins</b>
-		 - Type: `array`
-			 - **Items**
-			 - &#36;ref: [#/definitions/columnJoins](#/definitions/columnJoins)
+### Properties
+ - ### startDate
+	 - &#36;ref: [../../type/basic.json#/definitions/date](../types/basic.md#date)
+ - ### dayCount
+ - Type: `integer`
+	 - Default: `1`
+ - ### columnJoins
+ - Type: `array`
+### Items
+ - &#36;ref: [#/definitions/columnJoins](#columnjoins)
 
 
-**tableData**
+### tableData
 
- - Type: `object`
+Type: `object`
+
  - This schema <u>does not</u> accept additional properties.
- - **Properties**
-	 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/tableData/properties/columns">columns</b>
-		 - Type: `array`
-			 - **Items**
-			 - &#36;ref: [#/definitions/columnName](#/definitions/columnName)
-	 - <b id="#https://open-metadata.org/schema/entity/data/table.json/definitions/tableData/properties/rows">rows</b>
-		 - Type: `array`
-			 - **Items**
-			 - Type: `array`
-				 - **Items**
-				 - Type: `string`
-			 - 
-				 - Type: `number`
-			 - 
+### Properties
+ - ### columns
+ - Type: `array`
+### Items
+ - &#36;ref: [#/definitions/columnName](#columnname)
+ - ### rows
+ - Type: `array`
+### Items
+Type: `array`
+
+### Items
+ - Type: `string`
+ - Type: `number`
 
 
