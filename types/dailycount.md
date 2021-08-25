@@ -7,9 +7,8 @@ Type: `object`
 This schema <u>does not</u> accept additional properties.
 
 ## Properties
-### count `required`
-Type: `integer`
-
- - Range:  &ge; 0
-### date `required`
- - &#36;ref: [basic.json#/definitions/date](basic.md#date)
+ - ### count `required`
+	 - Type: `integer`
+	 - Range:  &ge; 0
+ - ### date `required`
+	 - &#36;ref: [basic.json#/definitions/date](basic.md#date)

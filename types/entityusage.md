@@ -5,11 +5,9 @@
 Type: `object`
 
 ## Properties
-### entity `required`
- - &#36;ref: [entityReference.json](entityreference.md)
-### usage `required`
-Type: `array`
-
+ - ### entity `required`
+	 - &#36;ref: [entityReference.json](entityreference.md)
+ - ### usage `required`
+	 - Type: `array`
 ### Items
-&#36;ref: [usageDetails.json](usagedetails.md)
-
+		 - &#36;ref: [usageDetails.json](usagedetails.md)

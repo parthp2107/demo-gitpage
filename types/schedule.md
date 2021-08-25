@@ -5,7 +5,7 @@
 Type: `object`
 
 ## Properties
-### startDate
- - &#36;ref: [basic.json#/definitions/dateTime](basic.md#datetime)
-### repeatFrequency
- - &#36;ref: [basic.json#/definitions/duration](basic.md#duration)
+ - ### startDate
+	 - &#36;ref: [basic.json#/definitions/dateTime](basic.md#datetime)
+ - ### repeatFrequency
+	 - &#36;ref: [basic.json#/definitions/duration](basic.md#duration)

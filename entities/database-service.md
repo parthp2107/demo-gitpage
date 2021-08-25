@@ -5,30 +5,27 @@
 Type: `object`
 
 ## Properties
-### id `required`
- - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
-### name `required`
-Type: `string`
-
- - Length: between 1 and 64
-### serviceType `required`
- - &#36;ref: [#/definitions/databaseServiceType](#databaseservicetype)
-### description
-Type: `string`
-
-### href `required`
- - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
-### jdbc `required`
- - &#36;ref: [../../type/jdbcConnection.json#/definitions/jdbcInfo](../types/jdbcconnection.md#jdbcinfo)
-### ingestionSchedule
- - &#36;ref: [../../type/schedule.json](../types/schedule.md)
+ - ### id `required`
+	 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
+ - ### name `required`
+	 - Type: `string`
+	 - Length: between 1 and 64
+ - ### serviceType `required`
+	 - &#36;ref: [#/definitions/databaseServiceType](#databaseservicetype)
+ - ### description
+	 - Type: `string`
+ - ### href `required`
+	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
+ - ### jdbc `required`
+	 - &#36;ref: [../../type/jdbcConnection.json#/definitions/jdbcInfo](../types/jdbcconnection.md#jdbcinfo)
+ - ### ingestionSchedule
+	 - &#36;ref: [../../type/schedule.json](../types/schedule.md)
 
 
 ## Type definitions in this schema
 ### databaseServiceType
 
-Type: `string`
-
+ - Type: `string`
  - The value is restricted to the following: 
 	 1. _"BigQuery"_
 	 2. _"MySQL"_

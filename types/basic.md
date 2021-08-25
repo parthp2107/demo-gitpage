@@ -7,15 +7,13 @@
 ## Type definitions in this schema
 ### uuid
 
-Type: `string`
-
+ - Type: `string`
  - String format must be a "uuid"
 
 
 ### email
 
-Type: `string`
-
+ - Type: `string`
  - String format must be a "email"
  - The value must match this pattern: `^\S+@\S+\.\S+$`
  - Length: between 6 and 127
@@ -23,59 +21,51 @@ Type: `string`
 
 ### entityLink
 
-Type: `string`
-
+ - Type: `string`
  - The value must match this pattern: `^<#E/\S+/\S+>$`
 
 
 ### timestamp
 
-Type: `string`
-
+ - Type: `string`
  - String format must be a "utc-millisec"
 
 
 ### href
 
-Type: `string`
-
+ - Type: `string`
  - String format must be a "uri"
 
 
 ### timeInterval
 
-Type: `object`
-
+ - Type: `object`
 ### Properties
- - ### start
- - Type: `integer`
- - ### end
- - Type: `integer`
+	 - ### start
+		 - Type: `integer`
+	 - ### end
+		 - Type: `integer`
 
 
 ### duration
 
-Type: `string`
-
+ - Type: `string`
 
 
 ### date
 
-Type: `string`
-
+ - Type: `string`
  - String format must be a "date"
 
 
 ### dateTime
 
-Type: `string`
-
+ - Type: `string`
  - String format must be a "date-time"
 
 
 ### sqlQuery
 
-Type: `string`
-
+ - Type: `string`
 
 

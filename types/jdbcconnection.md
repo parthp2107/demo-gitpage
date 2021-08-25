@@ -5,40 +5,35 @@
 Type: `object`
 
 ## Properties
-### driverClass `required`
- - &#36;ref: [#/definitions/driverClass](#driverclass)
-### connectionUrl `required`
- - &#36;ref: [#/definitions/connectionUrl](#connectionurl)
-### userName `required`
-Type: `string`
-
-### password `required`
-Type: `string`
-
+ - ### driverClass `required`
+	 - &#36;ref: [#/definitions/driverClass](#driverclass)
+ - ### connectionUrl `required`
+	 - &#36;ref: [#/definitions/connectionUrl](#connectionurl)
+ - ### userName `required`
+	 - Type: `string`
+ - ### password `required`
+	 - Type: `string`
 
 
 ## Type definitions in this schema
 ### driverClass
 
-Type: `string`
-
+ - Type: `string`
 
 
 ### connectionUrl
 
-Type: `string`
-
+ - Type: `string`
  - String format must be a "uri"
 
 
 ### jdbcInfo
 
-Type: `object`
-
+ - Type: `object`
 ### Properties
- - ### driverClass `required`
-	 - &#36;ref: [#/definitions/driverClass](#driverclass)
- - ### connectionUrl `required`
-	 - &#36;ref: [#/definitions/connectionUrl](#connectionurl)
+	 - ### driverClass `required`
+		 - &#36;ref: [#/definitions/driverClass](#driverclass)
+	 - ### connectionUrl `required`
+		 - &#36;ref: [#/definitions/connectionUrl](#connectionurl)
 
 

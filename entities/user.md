@@ -7,45 +7,39 @@ Type: `object`
 This schema <u>does not</u> accept additional properties.
 
 ## Properties
-### id `required`
- - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
-### name `required`
- - &#36;ref: [#/definitions/userName](#username)
-### displayName
-Type: `string`
-
-### email `required`
- - &#36;ref: [../../type/basic.json#/definitions/email](../types/basic.md#email)
-### href `required`
- - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
-### timezone
-Type: `string`
-
- - String format must be a "timezone"
-### deactivated
-Type: `boolean`
-
-### isBot
-Type: `boolean`
-
-### isAdmin
-Type: `boolean`
-
-### profile
- - &#36;ref: [../../type/profile.json](../types/profile.md)
-### teams
- - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
-### owns
- - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
-### follows
- - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
+ - ### id `required`
+	 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
+ - ### name `required`
+	 - &#36;ref: [#/definitions/userName](#username)
+ - ### displayName
+	 - Type: `string`
+ - ### email `required`
+	 - &#36;ref: [../../type/basic.json#/definitions/email](../types/basic.md#email)
+ - ### href `required`
+	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
+ - ### timezone
+	 - Type: `string`
+	 - String format must be a "timezone"
+ - ### deactivated
+	 - Type: `boolean`
+ - ### isBot
+	 - Type: `boolean`
+ - ### isAdmin
+	 - Type: `boolean`
+ - ### profile
+	 - &#36;ref: [../../type/profile.json](../types/profile.md)
+ - ### teams
+	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
+ - ### owns
+	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
+ - ### follows
+	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
 
 
 ## Type definitions in this schema
 ### userName
 
-Type: `string`
-
+ - Type: `string`
  - Length: between 1 and 64
 
 

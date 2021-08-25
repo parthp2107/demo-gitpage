@@ -5,59 +5,50 @@
 Type: `object`
 
 ## Properties
-### id `required`
- - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
-### name `required`
- - &#36;ref: [#/definitions/tableName](#tablename)
-### description
-Type: `string`
-
-### href
- - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
-### tableType
- - &#36;ref: [#/definitions/tableType](#tabletype)
-### fullyQualifiedName
-Type: `string`
-
-### columns `required`
-Type: `array`
-
+ - ### id `required`
+	 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
+ - ### name `required`
+	 - &#36;ref: [#/definitions/tableName](#tablename)
+ - ### description
+	 - Type: `string`
+ - ### href
+	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
+ - ### tableType
+	 - &#36;ref: [#/definitions/tableType](#tabletype)
+ - ### fullyQualifiedName
+	 - Type: `string`
+ - ### columns `required`
+	 - Type: `array`
 ### Items
-&#36;ref: [#/definitions/column](#column)
-
-### tableConstraints
-Type: `array`
-
+		 - &#36;ref: [#/definitions/column](#column)
+ - ### tableConstraints
+	 - Type: `array`
 ### Items
-&#36;ref: [#/definitions/tableConstraint](#tableconstraint)
-
-### usageSummary
- - &#36;ref: [../../type/usageDetails.json](../types/usagedetails.md)
-### owner
- - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
-### followers
- - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
-### database
- - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
-### viewDefinition
- - &#36;ref: [../../type/basic.json#/definitions/sqlQuery](../types/basic.md#sqlquery)
-### tags
-Type: `array`
-
+		 - &#36;ref: [#/definitions/tableConstraint](#tableconstraint)
+ - ### usageSummary
+	 - &#36;ref: [../../type/usageDetails.json](../types/usagedetails.md)
+ - ### owner
+	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
+ - ### followers
+	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
+ - ### database
+	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
+ - ### viewDefinition
+	 - &#36;ref: [../../type/basic.json#/definitions/sqlQuery](../types/basic.md#sqlquery)
+ - ### tags
+	 - Type: `array`
 ### Items
-&#36;ref: [../../type/tagLabel.json](../types/taglabel.md)
-
-### joins
- - &#36;ref: [#/definitions/tableJoins](#tablejoins)
-### sampleData
- - &#36;ref: [#/definitions/tableData](#tabledata)
+		 - &#36;ref: [../../type/tagLabel.json](../types/taglabel.md)
+ - ### joins
+	 - &#36;ref: [#/definitions/tableJoins](#tablejoins)
+ - ### sampleData
+	 - &#36;ref: [#/definitions/tableData](#tabledata)
 
 
 ## Type definitions in this schema
 ### tableType
 
-Type: `string`
-
+ - Type: `string`
  - The value is restricted to the following: 
 	 1. _"Regular"_
 	 2. _"External"_
@@ -68,8 +59,7 @@ Type: `string`
 
 ### columnDataType
 
-Type: `string`
-
+ - Type: `string`
  - The value is restricted to the following: 
 	 1. _"NUMBER"_
 	 2. _"TINYINT"_
@@ -108,8 +98,7 @@ Type: `string`
 
 ### columnConstraint
 
-Type: `string`
-
+ - Type: `string`
  - The value is restricted to the following: 
 	 1. _"NULL"_
 	 2. _"NOT_NULL"_
@@ -120,124 +109,113 @@ Type: `string`
 
 ### tableConstraint
 
-Type: `object`
-
+ - Type: `object`
 ### Properties
- - ### constraintType
- - Type: `string`
-	 - The value is restricted to the following: 
-		 1. _"UNIQUE"_
-		 2. _"PRIMARY_KEY"_
-		 3. _"FOREIGN_KEY"_
- - ### columns
- - Type: `array`
+	 - ### constraintType
+		 - Type: `string`
+		 - The value is restricted to the following: 
+			 1. _"UNIQUE"_
+			 2. _"PRIMARY_KEY"_
+			 3. _"FOREIGN_KEY"_
+	 - ### columns
+		 - Type: `array`
 ### Items
-Type: `string`
-
+			 - Type: `string`
 
 
 ### columnName
 
-Type: `string`
-
+ - Type: `string`
  - The value must match this pattern: `^[^.]*$`
  - Length: between 1 and 64
 
 
 ### tableName
 
-Type: `string`
-
+ - Type: `string`
  - The value must match this pattern: `^[^.]*$`
  - Length: between 1 and 64
 
 
 ### fullyQualifiedColumnName
 
-Type: `string`
-
+ - Type: `string`
  - Length: between 1 and 256
 
 
 ### column
 
-Type: `object`
-
+ - Type: `object`
 ### Properties
- - ### name `required`
-	 - &#36;ref: [#/definitions/columnName](#columnname)
- - ### columnDataType `required`
-	 - &#36;ref: [#/definitions/columnDataType](#columndatatype)
- - ### description
- - Type: `string`
- - ### fullyQualifiedName
-	 - &#36;ref: [#/definitions/fullyQualifiedColumnName](#fullyqualifiedcolumnname)
- - ### tags
- - Type: `array`
+	 - ### name `required`
+		 - &#36;ref: [#/definitions/columnName](#columnname)
+	 - ### columnDataType `required`
+		 - &#36;ref: [#/definitions/columnDataType](#columndatatype)
+	 - ### description
+		 - Type: `string`
+	 - ### fullyQualifiedName
+		 - &#36;ref: [#/definitions/fullyQualifiedColumnName](#fullyqualifiedcolumnname)
+	 - ### tags
+		 - Type: `array`
 ### Items
- - &#36;ref: [../../type/tagLabel.json](../types/taglabel.md)
- - ### columnConstraint
-	 - &#36;ref: [#/definitions/columnConstraint](#columnconstraint)
- - ### ordinalPosition
- - Type: `integer`
+			 - &#36;ref: [../../type/tagLabel.json](../types/taglabel.md)
+	 - ### columnConstraint
+		 - &#36;ref: [#/definitions/columnConstraint](#columnconstraint)
+	 - ### ordinalPosition
+		 - Type: `integer`
 
 
 ### columnJoins
 
-Type: `object`
-
+ - Type: `object`
  - This schema <u>does not</u> accept additional properties.
 ### Properties
- - ### columnName
-	 - &#36;ref: [#/definitions/columnName](#columnname)
- - ### joinedWith
- - Type: `array`
+	 - ### columnName
+		 - &#36;ref: [#/definitions/columnName](#columnname)
+	 - ### joinedWith
+		 - Type: `array`
 ### Items
-Type: `object`
-
+			 - Type: `object`
 ### Properties
- - ### fullyQualifiedName
-	 - &#36;ref: [#/definitions/fullyQualifiedColumnName](#fullyqualifiedcolumnname)
- - ### joinCount
- - Type: `integer`
+				 - ### fullyQualifiedName
+					 - &#36;ref: [#/definitions/fullyQualifiedColumnName](#fullyqualifiedcolumnname)
+				 - ### joinCount
+					 - Type: `integer`
 
 
 ### tableJoins
 
-Type: `object`
-
+ - Type: `object`
  - This schema <u>does not</u> accept additional properties.
 ### Properties
- - ### startDate
-	 - &#36;ref: [../../type/basic.json#/definitions/date](../types/basic.md#date)
- - ### dayCount
- - Type: `integer`
-	 - Default: `1`
- - ### columnJoins
- - Type: `array`
+	 - ### startDate
+		 - &#36;ref: [../../type/basic.json#/definitions/date](../types/basic.md#date)
+	 - ### dayCount
+		 - Type: `integer`
+		 - Default: `1`
+	 - ### columnJoins
+		 - Type: `array`
 ### Items
- - &#36;ref: [#/definitions/columnJoins](#columnjoins)
+			 - &#36;ref: [#/definitions/columnJoins](#columnjoins)
 
 
 ### tableData
 
-Type: `object`
-
+ - Type: `object`
  - This schema <u>does not</u> accept additional properties.
 ### Properties
- - ### columns
- - Type: `array`
+	 - ### columns
+		 - Type: `array`
 ### Items
- - &#36;ref: [#/definitions/columnName](#columnname)
- - ### rows
- - Type: `array`
+			 - &#36;ref: [#/definitions/columnName](#columnname)
+	 - ### rows
+		 - Type: `array`
 ### Items
-Type: `array`
-
+			 - Type: `array`
 ### Items
- - Type: `string`
- - 
- - Type: `number`
- - 
+				 - Type: `string`
+			 - 
+				 - Type: `number`
+			 - 
 
 
