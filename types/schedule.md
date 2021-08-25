@@ -1,11 +1,15 @@
 # Schedule
 
+This schema defines the type used for the schedule. The schedule has a start time and repeat frequency.
+
 <b id="https/open-metadata.org/schema/type/schedule.json">&#36;id: https://open-metadata.org/schema/type/schedule.json</b>
 
 Type: `object`
 
 ## Properties
  - **startDate**
+	 - Start date and time of the schedule.
 	 - &#36;ref: [basic.json#/definitions/dateTime](basic.md#datetime)
  - **repeatFrequency**
+	 - Repeat frequency in ISO 8601 duration format. Example - 'P23DT23H'.
 	 - &#36;ref: [basic.json#/definitions/duration](basic.md#duration)

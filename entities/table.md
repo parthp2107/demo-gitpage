@@ -1,53 +1,71 @@
 # Table
 
+This schema defines the Table entity. A Table organizes data in rows and columns and is defined by a Schema. OpenMetadata does not have a separate abstraction for Schema. Both Table and Schema are captured in this entity.
+
 <b id="https/open-metadata.org/schema/entity/data/table.json">&#36;id: https://open-metadata.org/schema/entity/data/table.json</b>
 
 Type: `object`
 
 ## Properties
  - **id** `required`
+	 - Unique identifier of this table instance.
 	 - &#36;ref: [../../type/basic.json#/definitions/uuid](../types/basic.md#uuid)
  - **name** `required`
+	 - Name of a table. Expected to be unique within a database.
 	 - &#36;ref: [#/definitions/tableName](#tablename)
  - **description**
+	 - Description of a table.
 	 - Type: `string`
  - **href**
+	 - Link to this table resource.
 	 - &#36;ref: [../../type/basic.json#/definitions/href](../types/basic.md#href)
  - **tableType**
 	 - &#36;ref: [#/definitions/tableType](#tabletype)
  - **fullyQualifiedName**
+	 - Fully qualified name of a table in the form `serviceName.databaseName.tableName`.
 	 - Type: `string`
  - **columns** `required`
+	 - Columns in this table.
 	 - Type: `array`
 		 - **Items**
 		 - &#36;ref: [#/definitions/column](#column)
  - **tableConstraints**
+	 - Table constraints.
 	 - Type: `array`
 		 - **Items**
 		 - &#36;ref: [#/definitions/tableConstraint](#tableconstraint)
  - **usageSummary**
+	 - Latest usage information for this table.
 	 - &#36;ref: [../../type/usageDetails.json](../types/usagedetails.md)
  - **owner**
+	 - Owner of this table.
 	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
  - **followers**
+	 - Followers of this table.
 	 - &#36;ref: [../../type/entityReference.json#/definitions/entityReferenceList](../types/entityreference.md#entityreferencelist)
  - **database**
+	 - Reference to Database that contains this table.
 	 - &#36;ref: [../../type/entityReference.json](../types/entityreference.md)
  - **viewDefinition**
+	 - View Definition in SQL. Applies to TableType.View only.
 	 - &#36;ref: [../../type/basic.json#/definitions/sqlQuery](../types/basic.md#sqlquery)
  - **tags**
+	 - Tags for this table.
 	 - Type: `array`
 		 - **Items**
 		 - &#36;ref: [../../type/tagLabel.json](../types/taglabel.md)
  - **joins**
+	 - Details of other tables this table is frequently joined with.
 	 - &#36;ref: [#/definitions/tableJoins](#tablejoins)
  - **sampleData**
+	 - Sample data for a table.
 	 - &#36;ref: [#/definitions/tableData](#tabledata)
 
 
 ## Type definitions in this schema
 ### tableType
 
+ - This schema defines the type used for describing different types of tables.
  - Type: `string`
  - The value is restricted to the following: 
 	 1. _"Regular"_
@@ -59,6 +77,7 @@ Type: `object`
 
 ### columnDataType
 
+ - This enum defines the type of data stored in a column.
  - Type: `string`
  - The value is restricted to the following: 
 	 1. _"NUMBER"_
@@ -98,6 +117,7 @@ Type: `object`
 
 ### columnConstraint
 
+ - This enum defines the type for column constraint.
  - Type: `string`
  - The value is restricted to the following: 
 	 1. _"NULL"_
@@ -109,6 +129,7 @@ Type: `object`
 
 ### tableConstraint
 
+ - This enum defines the type for table constraint.
  - Type: `object`
  - **Properties**
 	 - **constraintType**
@@ -118,6 +139,7 @@ Type: `object`
 			 2. _"PRIMARY_KEY"_
 			 3. _"FOREIGN_KEY"_
 	 - **columns**
+		 - List of column names corresponding to the constraint.
 		 - Type: `array`
 			 - **Items**
 			 - Type: `string`
@@ -125,6 +147,7 @@ Type: `object`
 
 ### columnName
 
+ - Local name (not fully qualified name) of the column.
  - Type: `string`
  - The value must match this pattern: `^[^.]*$`
  - Length: between 1 and 64
@@ -132,6 +155,7 @@ Type: `object`
 
 ### tableName
 
+ - Local name (not fully qualified name) of a table.
  - Type: `string`
  - The value must match this pattern: `^[^.]*$`
  - Length: between 1 and 64
@@ -139,40 +163,49 @@ Type: `object`
 
 ### fullyQualifiedColumnName
 
+ - Fully qualified name of the column that includes `serviceName.databaseName.tableName.columnName`.
  - Type: `string`
  - Length: between 1 and 256
 
 
 ### column
 
+ - This schema defines the type for a column in a table.
  - Type: `object`
  - **Properties**
 	 - **name** `required`
 		 - &#36;ref: [#/definitions/columnName](#columnname)
 	 - **columnDataType** `required`
+		 - Data type of the column (int, date etc.).
 		 - &#36;ref: [#/definitions/columnDataType](#columndatatype)
 	 - **description**
+		 - Description of the column.
 		 - Type: `string`
 	 - **fullyQualifiedName**
 		 - &#36;ref: [#/definitions/fullyQualifiedColumnName](#fullyqualifiedcolumnname)
 	 - **tags**
+		 - Tags associated with the column.
 		 - Type: `array`
 			 - **Items**
 			 - &#36;ref: [../../type/tagLabel.json](../types/taglabel.md)
 	 - **columnConstraint**
+		 - Column level constraint.
 		 - &#36;ref: [#/definitions/columnConstraint](#columnconstraint)
 	 - **ordinalPosition**
+		 - Ordinal position of the column.
 		 - Type: `integer`
 
 
 ### columnJoins
 
+ - This schema defines the type to capture how frequently a column is joined with columns in the other tables.
  - Type: `object`
  - This schema <u>does not</u> accept additional properties.
  - **Properties**
 	 - **columnName**
 		 - &#36;ref: [#/definitions/columnName](#columnname)
 	 - **joinedWith**
+		 - Fully qualified names of the columns that this column is joined with.
 		 - Type: `array`
 			 - **Items**
 			 - Type: `object`
@@ -185,10 +218,12 @@ Type: `object`
 
 ### tableJoins
 
+ - This schema defines the type to capture information about how columns in this table are joined with columns in the other tables.
  - Type: `object`
  - This schema <u>does not</u> accept additional properties.
  - **Properties**
 	 - **startDate**
+		 - Date can be only from today going back to last 29 days.
 		 - &#36;ref: [../../type/basic.json#/definitions/date](../types/basic.md#date)
 	 - **dayCount**
 		 - Type: `integer`
@@ -201,16 +236,20 @@ Type: `object`
 
 ### tableData
 
+ - This schema defines the type to capture rows of sample data for a table.
  - Type: `object`
  - This schema <u>does not</u> accept additional properties.
  - **Properties**
 	 - **columns**
+		 - List of local column names (not fully qualified column names) of the table.
 		 - Type: `array`
 			 - **Items**
 			 - &#36;ref: [#/definitions/columnName](#columnname)
 	 - **rows**
+		 - Data for multiple rows of the table.
 		 - Type: `array`
 			 - **Items**
+			 - Data for a single row of the table in the same order as `columns` fields.
 			 - Type: `array`
 				 - **Items**
 				 - Type: `string`

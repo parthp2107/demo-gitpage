@@ -1,5 +1,7 @@
 # Profile
 
+This schema defines the type for a profile of a user, team, or organization.
+
 <b id="https/open-metadata.org/schema/type/profile.json">&#36;id: https://open-metadata.org/schema/type/profile.json</b>
 
 Type: `object`
@@ -12,6 +14,7 @@ Type: `object`
 ## Type definitions in this schema
 ### imageList
 
+ - Links to a list of images of varying resolutions/sizes.
  - Type: `object`
  - **Properties**
 	 - **image**
