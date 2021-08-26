@@ -30,4 +30,5 @@ Type: `object`
 	 - Link to the tag resource.
 	 - $ref: [basic.json#/definitions/href](basic.md#href)
 
-This Document was generated on: Thursday, August 26, 2021
+
+_This Document was generated on: Thursday, August 26, 2021_

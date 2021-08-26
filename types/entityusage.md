@@ -16,4 +16,5 @@ Type: `object`
 		 - **Items**
 		 - $ref: [usageDetails.json](usagedetails.md)
 
-This Document was generated on: Thursday, August 26, 2021
+
+_This Document was generated on: Thursday, August 26, 2021_

@@ -24,4 +24,5 @@ Type: `object`
 	 - Link to the resource corresponding to this bot.
 	 - $ref: [../type/basic.json#/definitions/href](../types/basic.md#href)
 
-This Document was generated on: Thursday, August 26, 2021
+
+_This Document was generated on: Thursday, August 26, 2021_
