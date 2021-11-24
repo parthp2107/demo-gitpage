@@ -17,7 +17,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Cherry pick into main
-        uses: parthp2107/github-cherry-pick-action@v1.0.1
+        uses: parthp2107/github-cherry-pick-action@main
         with:
           branch: main
           labels: |
