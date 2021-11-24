@@ -1,24 +1,25 @@
 name: Build and Deploy
 on:
-  pull_request:
+  push:
     branches:
       - test
     paths:
       - 'entities/**'
-    types: ["closed"]
+
 
 jobs:
-  cherry_pick_release_v2_0:
+  release_pull_request:
     runs-on: ubuntu-latest
-    name: Cherry pick into release-v2.0
+    name: release_pull_request
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - name: checkout
+        uses: actions/checkout@v1
+      - name: Create PR to branch
+        uses: gorillio/github-action-cherry-pick@master
         with:
-          fetch-depth: 0
-      - name: Cherry pick into release-v2.0
-        uses: carloscastrojumo/github-cherry-pick-action@v1.0.1
-        with:
-          branch: main
-env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          pr_branch: main
+          assignees: parthp2107
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITBOT_EMAIL: <BOT_EMAIL>
+          DRY_RUN: false
