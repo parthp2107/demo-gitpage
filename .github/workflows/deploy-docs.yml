@@ -4,7 +4,7 @@ on:
     branches:
       - test
     paths:
-      - 'docs/**'
+      - 'entities/**'
 
 jobs:
   cherry_pick_release_v2_0:
@@ -18,6 +18,6 @@ jobs:
       - name: Cherry pick into release-v2.0
         uses: carloscastrojumo/github-cherry-pick-action@v1.0.1
         with:
-          branch: docs-workflow
+          branch: main
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
