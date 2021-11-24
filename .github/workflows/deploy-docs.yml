@@ -17,7 +17,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Cherry pick into docs-workflow
-        uses: carloscastrojumo/github-cherry-pick-action@v1.0.1
+        uses: parthp2107/github-cherry-pick-action@v1.0.1
         with:
           branch: docs-workflow
           labels: |
