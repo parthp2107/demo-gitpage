@@ -1,10 +1,11 @@
 name: Build and Deploy
 on:
-  push:
+  pull_request:
     branches:
       - test
     paths:
       - 'entities/**'
+    types: ["closed"]
 
 jobs:
   cherry_pick_release_v2_0:
