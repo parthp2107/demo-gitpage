@@ -18,8 +18,6 @@ jobs:
         uses: gorillio/github-action-cherry-pick@master
         with:
           pr_branch: main
-          assignees: parthp2107
+          assignees: parthp2107 <parth.panchal@deuexsolutions.com>
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITBOT_EMAIL: <BOT_EMAIL>
-          DRY_RUN: false
