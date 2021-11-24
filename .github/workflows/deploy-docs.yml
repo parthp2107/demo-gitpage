@@ -15,4 +15,8 @@ jobs:
       - name: checkout
         uses: actions/checkout@v1
       - name: Create PR to branch
-        run: chmod +x push-create-pr.sh && ./push-create-pr.sh
+        uses: parthp2107/github-action-cherry-pick@master
+        with:
+          pr_branch: 'main'
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN }}
