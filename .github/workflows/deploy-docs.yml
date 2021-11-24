@@ -8,15 +8,21 @@ on:
 
 
 jobs:
-  release_pull_request:
+  cherry_pick_release_v2_0:
     runs-on: ubuntu-latest
-    name: release_pull_request
+    name: Cherry pick into docs-workflow
     steps:
-      - name: checkout
-        uses: actions/checkout@v1
-      - name: Create PR to branch
-        uses: parthp2107/github-action-cherry-pick@master
+      - name: Checkout
+        uses: actions/checkout@v2
         with:
-          pr_branch: 'main'
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      - name: Cherry pick into docs-workflow
+        uses: carloscastrojumo/github-cherry-pick-action@v1.0.1
+        with:
+          branch: docs-workflow
+          labels: |
+            cherry-pick
+          reviewers: |
+            parthp2107
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
