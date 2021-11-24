@@ -10,16 +10,16 @@ on:
 jobs:
   cherry_pick_release_v2_0:
     runs-on: ubuntu-latest
-    name: Cherry pick into docs-workflow
+    name: Cherry pick into main
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Cherry pick into docs-workflow
+      - name: Cherry pick into main
         uses: parthp2107/github-cherry-pick-action@v1.0.1
         with:
-          branch: docs-workflow
+          branch: main
           labels: |
             cherry-pick
           reviewers: |
