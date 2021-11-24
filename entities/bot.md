@@ -1,6 +1,6 @@
 # Bot
 
-Testing checking testing This schema defines Bot entity. A bot automates tasks, such as adding description, identifying the importance of data. It runs as a special user in the system.
+Testing checking testing checking This schema defines Bot entity. A bot automates tasks, such as adding description, identifying the importance of data. It runs as a special user in the system.
 
 **$id: https://open-metadata.org/schema/entity/bots.json**
 
