@@ -1,6 +1,6 @@
 # Bot
 
-This schema defines Bot entity. A bot automates tasks, such as adding description, identifying the importance of data. It runs as a special user in the system.
+Testing checking testing This schema defines Bot entity. A bot automates tasks, such as adding description, identifying the importance of data. It runs as a special user in the system.
 
 <b id="https/open-metadata.org/schema/entity/bots.json">&#36;id: https://open-metadata.org/schema/entity/bots.json</b>
 
